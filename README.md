@@ -3,6 +3,12 @@
 Snowdrop is a [University of Guelph](https://www.uoguelph.ca/) themed
 front-end framework based on [Bootstrap](https://getbootstrap.com/).
 
+## Getting started
+
+Snowdrop is derived from Bootstrap and supports all of the classes and components available 
+in [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/), customized
+to follow University of Guelph brand guidelines.
+
 ## Quick start
 
 Snowdrop is available via jsDelivr, a free open source CDN. 
