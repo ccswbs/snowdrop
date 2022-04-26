@@ -25,4 +25,13 @@ following `<script>` within the body of your page, before the closing
 <script src="https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop/dist/js/snowdrop.bundle.min.js" crossorigin="anonymous"></script>
 ```
 
+## Package managers
+
+### npm
+
+Install snowdrop in your npm project:
+
+```
+$ npm install @uoguelph/snowdrop
+```
 
