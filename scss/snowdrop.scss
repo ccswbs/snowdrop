@@ -9,8 +9,8 @@
 // the original 10px and adjust the base font size to 1.6rem
 // to restore a more reasonable 16px base font size.
 
-html { font-size: 10px; }
-$font-size-base: 1.6rem;
+//html { font-size: 10px; }
+//$font-size-base: 1.6rem;
 
 
 // Color system
@@ -33,6 +33,11 @@ $info:    $blue;
 
 $yiq-contrasted-threshold: 122;
 
+// Banded background
+.bg-banded {
+  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
+}
+
 
 // Typography
 
@@ -40,6 +45,11 @@ $headings-color: $red;
 $headings-font-weight: 600;
 $hr-border-color: $yellow;
 $hr-border-width: 4px;
+
+
+// Links
+
+$link-color:                              #0074c1;
 
 
 // Fonts

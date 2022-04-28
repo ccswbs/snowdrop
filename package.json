@@ -1,7 +1,7 @@
 {
-  "name": "snowdrop",
+  "name": "@uoguelph/snowdrop",
   "version": "1.0.0",
-  "description": "",
+  "description": "UG themed front end framework based on Bootstrap",
   "main": "index.js",
   "scripts": {
     "css": "npm-run-all css-compile css-minify",
@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "M. Brent Harp <brharp@uoguelph.ca>",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3"
