@@ -1,6 +1,6 @@
 {
   "name": "@uoguelph/snowdrop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UG themed front end framework based on Bootstrap",
   "main": "index.js",
   "scripts": {
