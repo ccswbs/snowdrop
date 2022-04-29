@@ -33,8 +33,8 @@ $info:    $blue;
 
 $yiq-contrasted-threshold: 122;
 
-// Banded background
-.bg-banded {
+// Variegated background
+.bg-variegated {
   background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
 }
 
