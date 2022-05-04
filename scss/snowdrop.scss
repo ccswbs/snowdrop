@@ -93,3 +93,7 @@ $grid-breakpoints: (
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Import extensions
+@import "variables";
+@import "quicklinks";
+

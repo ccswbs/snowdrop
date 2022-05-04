@@ -1,5 +1,5 @@
 /*!
-  * Snowdrop v1.0.2 (undefined)
+  * Snowdrop v1.0.3-dev (undefined)
   * Copyright 2022 M. Brent Harp <brharp@uoguelph.ca>
   */
 (function (global, factory) {
