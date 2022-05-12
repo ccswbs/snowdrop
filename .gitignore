@@ -1,3 +1,13 @@
-node_modules
+# Ignore docs files
+/_site/
+
+# Hugo files
+/resources/
+/.hugo_build.lock
+
+# Ignore archives
 *.zip
+
+# Folders to ignore
+node_modules
 
