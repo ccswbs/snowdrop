@@ -1,6 +1,9 @@
 .bd-navbar {
-  padding: .75rem 0;
-  background-color: $bd-purple-bright;
+  background: var(--bs-red);
+  background: linear-gradient(var(--bs-red) 150px,var(--bs-dark) 150px,var(--bs-dark) 100%);
+  @media (min-width: 768px) {
+    background: linear-gradient(var(--bs-dark) 20%,var(--bs-red) 20%,var(--bs-red) 80%,rgba(0,0,0,0.7) 80%);
+  }
 
   .navbar-toggler {
     padding: 0;
