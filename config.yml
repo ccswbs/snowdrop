@@ -79,7 +79,7 @@ params:
     css_rtl_hash:     "sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
     js:               "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/js/snowdrop.min.js"
     js_hash:          "sha384-CqL5VoBM60od+hffPxH5uST8TXRyY8iGxasX6TgKsYwZF5aiZpf1unZLH7xqyd9x"
-    js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/snowdrop.bundle.min.js"
+    js_bundle:        "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/js/snowdrop.bundle.min.js"
     js_bundle_hash:   "sha384-/reCR9/hRvGdYiAeyMI3082VPb1FQ+R46r4M4Jw0iWNKJeXXmy/xj0dbKwgjtMZG"
     popper:           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     popper_hash:      "sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
