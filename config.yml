@@ -58,7 +58,7 @@ params:
   docs_version:         "5.1"
   rfs_version:          "v9.0.6"
   github_org:           "https://github.com/twbs"
-  repo:                 "https://github.com/twbs/bootstrap"
+  repo:                 "https://github.com/brharp/snowdrop"
   twitter:              "getbootstrap"
   slack:                "https://bootstrap-slack.herokuapp.com/"
   opencollective:       "https://opencollective.com/bootstrap"
