@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Migrating to v5
-description: Track and review changes to the Bootstrap source files, documentation, and components to help you migrate from v4 to v5.
+description: Track and review changes to the Snowdrop source files, documentation, and components to help you migrate from v4 to v5.
 group: migration
 aliases: "/migration/"
 toc: true
@@ -223,7 +223,7 @@ toc: true
 
 - Added new [`.carousel-dark` variant]({{< docsref "/components/carousel#dark-variant" >}}) for dark text, controls, and indicators (great for lighter backgrounds).
 
-- Replaced chevron icons for carousel controls with new SVGs from [Bootstrap Icons]({{< param "icons" >}}).
+- Replaced chevron icons for carousel controls with new SVGs from [Snowdrop Icons]({{< param "icons" >}}).
 
 ### Close button
 
@@ -369,7 +369,7 @@ toc: true
 
 - **Dropped jQuery dependency** and rewrote plugins to be in regular JavaScript.
 
-- <span class="badge bg-danger">Breaking</span> Data attributes for all JavaScript plugins are now namespaced to help distinguish Bootstrap functionality from third parties and your own code. For example, we use `data-bs-toggle` instead of `data-toggle`.
+- <span class="badge bg-danger">Breaking</span> Data attributes for all JavaScript plugins are now namespaced to help distinguish Snowdrop functionality from third parties and your own code. For example, we use `data-bs-toggle` instead of `data-toggle`.
 
 - **All plugins can now accept a CSS selector as the first argument.** You can either pass a DOM element or any valid CSS selector to create a new instance of the plugin:
 
@@ -378,7 +378,7 @@ toc: true
   var dropdown = new bootstrap.Dropdown('[data-bs-toggle="dropdown"]')
   ```
 
-- `popperConfig` can be passed as a function that accepts the Bootstrap's default Popper config as an argument, so that you can merge this default configuration in your way. **Applies to dropdowns, popovers, and tooltips.**
+- `popperConfig` can be passed as a function that accepts the Snowdrop's default Popper config as an argument, so that you can merge this default configuration in your way. **Applies to dropdowns, popovers, and tooltips.**
 
 - The default value for the `fallbackPlacements` is changed to `['top', 'right', 'bottom', 'left']` for better placement of Popper elements. **Applies to dropdowns, popovers, and tooltips.**
 

@@ -34,7 +34,7 @@ Below is an offcanvas example that is shown by default (via `.show` on `.offcanv
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+    Content for the offcanvas goes here. You can place just about any Snowdrop component or custom elements here.
   </div>
 </div>
 {{< /example >}}
@@ -256,7 +256,7 @@ var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
 
 ### Events
 
-Bootstrap's offcanvas class exposes a few events for hooking into offcanvas functionality.
+Snowdrop's offcanvas class exposes a few events for hooking into offcanvas functionality.
 
 {{< bs-table "table" >}}
 | Event type | Description |

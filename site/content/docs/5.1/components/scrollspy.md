@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Scrollspy
-description: Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
+description: Automatically update Snowdrop navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
 group: components
 toc: true
 ---
@@ -10,7 +10,7 @@ toc: true
 
 Scrollspy has a few requirements to function properly:
 
-- It must be used on a Bootstrap [nav component]({{< docsref "/components/navs-tabs" >}}) or [list group]({{< docsref "/components/list-group" >}}).
+- It must be used on a Snowdrop [nav component]({{< docsref "/components/navs-tabs" >}}) or [list group]({{< docsref "/components/list-group" >}}).
 - Scrollspy requires `position: relative;` on the element you're spying on, usually the `<body>`.
 - Anchors (`<a>`) are required and must point to an element with that `id`.
 
@@ -229,7 +229,7 @@ Scrollspy also works with `.list-group`s. Scroll the area next to the list group
 
 ### Via data attributes
 
-To easily add scrollspy behavior to your topbar navigation, add `data-bs-spy="scroll"` to the element you want to spy on (most typically this would be the `<body>`). Then add the `data-bs-target` attribute with the ID or class of the parent element of any Bootstrap `.nav` component.
+To easily add scrollspy behavior to your topbar navigation, add `data-bs-spy="scroll"` to the element you want to spy on (most typically this would be the `<body>`). Then add the `data-bs-target` attribute with the ID or class of the parent element of any Snowdrop `.nav` component.
 
 ```css
 body {
@@ -295,7 +295,7 @@ Destroys an element's scrollspy. (Removes stored data on the DOM element)
 
 ```js
 var scrollSpyContentEl = document.getElementById('content')
-var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
+var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl) // Returns a Snowdrop scrollspy instance
 ```
 
 #### getOrCreateInstance
@@ -304,7 +304,7 @@ var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl) // Returns a
 
 ```js
 var scrollSpyContentEl = document.getElementById('content')
-var scrollSpy = bootstrap.ScrollSpy.getOrCreateInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
+var scrollSpy = bootstrap.ScrollSpy.getOrCreateInstance(scrollSpyContentEl) // Returns a Snowdrop scrollspy instance
 ```
 
 ### Options

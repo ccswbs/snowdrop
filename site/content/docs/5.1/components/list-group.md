@@ -242,7 +242,7 @@ Add nearly any HTML within, even for linked list groups like the one below, with
 
 ## Checkboxes and radios
 
-Place Bootstrap's checkboxes and radios within list group items and customize as needed. You can use them without `<label>`s, but please remember to include an `aria-label` attribute and value for accessibility.
+Place Snowdrop's checkboxes and radios within list group items and customize as needed. You can use them without `<label>`s, but please remember to include an `aria-label` attribute and value for accessibility.
 
 {{< example >}}
 <ul class="list-group">
@@ -481,7 +481,7 @@ Destroys an element's tab.
 
 ```js
 var triggerEl = document.querySelector('#trigger')
-var tab = bootstrap.Tab.getInstance(triggerEl) // Returns a Bootstrap tab instance
+var tab = bootstrap.Tab.getInstance(triggerEl) // Returns a Snowdrop tab instance
 ```
 
 #### getOrCreateInstance
@@ -490,7 +490,7 @@ var tab = bootstrap.Tab.getInstance(triggerEl) // Returns a Bootstrap tab instan
 
 ```js
 var triggerEl = document.querySelector('#trigger')
-var tab = bootstrap.Tab.getOrCreateInstance(triggerEl) // Returns a Bootstrap tab instance
+var tab = bootstrap.Tab.getOrCreateInstance(triggerEl) // Returns a Snowdrop tab instance
 ```
 
 ### Events

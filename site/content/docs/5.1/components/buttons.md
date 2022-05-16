@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Buttons
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+description: Use Snowdrop's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 group: components
 toc: true
 ---
 
 ## Examples
 
-Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+Snowdrop includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
 
 {{< example >}}
 {{< buttons.inline >}}
@@ -104,7 +104,7 @@ To cover cases where you have to keep the `href` attribute on a disabled link, t
 
 ## Block buttons
 
-Create responsive stacks of full-width, "block buttons" like those in Bootstrap 4 with a mix of our display and gap utilities. By using utilities instead of button specific classes, we have much greater control over spacing, alignment, and responsive behaviors.
+Create responsive stacks of full-width, "block buttons" like those in Snowdrop 4 with a mix of our display and gap utilities. By using utilities instead of button specific classes, we have much greater control over spacing, alignment, and responsive behaviors.
 
 {{< example >}}
 <div class="d-grid gap-2">

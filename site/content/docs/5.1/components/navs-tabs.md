@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Navs and tabs
-description: Documentation and examples for how to use Bootstrap's included navigation components.
+description: Documentation and examples for how to use Snowdrop's included navigation components.
 group: components
 aliases: "/docs/5.1/components/navs/"
 toc: true
@@ -9,7 +9,7 @@ toc: true
 
 ## Base nav
 
-Navigation available in Bootstrap share general markup and styles, from the base `.nav` class to the active and disabled states. Swap modifier classes to switch between each style.
+Navigation available in Snowdrop share general markup and styles, from the base `.nav` class to the active and disabled states. Swap modifier classes to switch between each style.
 
 The base `.nav` component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
 
@@ -621,7 +621,7 @@ Destroys an element's tab.
 
 ```js
 var triggerEl = document.querySelector('#trigger')
-var tab = bootstrap.Tab.getInstance(triggerEl) // Returns a Bootstrap tab instance
+var tab = bootstrap.Tab.getInstance(triggerEl) // Returns a Snowdrop tab instance
 ```
 
 #### getOrCreateInstance
@@ -630,7 +630,7 @@ var tab = bootstrap.Tab.getInstance(triggerEl) // Returns a Bootstrap tab instan
 
 ```js
 var triggerEl = document.querySelector('#trigger')
-var tab = bootstrap.Tab.getOrCreateInstance(triggerEl) // Returns a Bootstrap tab instance
+var tab = bootstrap.Tab.getOrCreateInstance(triggerEl) // Returns a Snowdrop tab instance
 ```
 
 ### Events

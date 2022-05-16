@@ -8,7 +8,7 @@ toc: true
 
 ## Lean Sass imports
 
-When using Sass in your asset pipeline, make sure you optimize Bootstrap by only `@import`ing the components you need. Your largest optimizations will likely come from the `Layout & Components` section of our `bootstrap.scss`.
+When using Sass in your asset pipeline, make sure you optimize Snowdrop by only `@import`ing the components you need. Your largest optimizations will likely come from the `Layout & Components` section of our `bootstrap.scss`.
 
 {{< scss-docs name="import-stack" file="scss/bootstrap.scss" >}}
 
@@ -17,7 +17,7 @@ If you're not using a component, comment it out or delete it entirely. For examp
 
 ## Lean JavaScript
 
-Bootstrap's JavaScript includes every component in our primary dist files (`bootstrap.js` and `bootstrap.min.js`), and even our primary dependency (Popper) with our bundle files (`bootstrap.bundle.js` and `bootstrap.bundle.min.js`). While you're customizing via Sass, be sure to remove related JavaScript.
+Snowdrop's JavaScript includes every component in our primary dist files (`bootstrap.js` and `bootstrap.min.js`), and even our primary dependency (Popper) with our bundle files (`bootstrap.bundle.js` and `bootstrap.bundle.min.js`). While you're customizing via Sass, be sure to remove related JavaScript.
 
 For instance, assuming you're using your own JavaScript bundler like Webpack or Rollup, you'd only import the JavaScript you plan on using. In the example below, we show how to just include our modal JavaScript:
 
@@ -54,13 +54,13 @@ const modal = new Modal(document.getElementById('myModal'))
 
 ## Autoprefixer .browserslistrc
 
-Bootstrap depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our `.browserslistrc` file, found in the root of the Bootstrap repo. Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor prefixes unique to that browser or version.
+Snowdrop depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our `.browserslistrc` file, found in the root of the Snowdrop repo. Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor prefixes unique to that browser or version.
 
 ## Unused CSS
 
 _Help wanted with this section, please consider opening a PR. Thanks!_
 
-While we don't have a prebuilt example for using [PurgeCSS](https://github.com/FullHuman/purgecss) with Bootstrap, there are some helpful articles and walkthroughs that the community has written. Here are some options:
+While we don't have a prebuilt example for using [PurgeCSS](https://github.com/FullHuman/purgecss) with Snowdrop, there are some helpful articles and walkthroughs that the community has written. Here are some options:
 
 - <https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772>
 - <https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/>
@@ -69,7 +69,7 @@ Lastly, this [CSS Tricks article on unused CSS](https://css-tricks.com/how-do-yo
 
 ## Minify and gzip
 
-Whenever possible, be sure to compress all the code you serve to your visitors. If you're using Bootstrap dist files, try to stick to the minified versions (indicated by the `.min.css` and `.min.js` extensions). If you're building Bootstrap from the source with your own build system, be sure to implement your own minifiers for HTML, CSS, and JS.
+Whenever possible, be sure to compress all the code you serve to your visitors. If you're using Snowdrop dist files, try to stick to the minified versions (indicated by the `.min.css` and `.min.js` extensions). If you're building Snowdrop from the source with your own build system, be sure to implement your own minifiers for HTML, CSS, and JS.
 
 ## Non-blocking files
 
@@ -90,4 +90,4 @@ If you want to learn more about this, there are already a lot of great articles 
 
 Your website should only be available over HTTPS connections in production. HTTPS improves the security, privacy, and availability of all sites, and [there is no such thing as non-sensitive web traffic](https://https.cio.gov/everything/). The steps to configure your website to be served exclusively over HTTPS vary widely depending on your architecture and web hosting provider, and thus are beyond the scope of these docs.
 
-Sites served over HTTPS should also access all stylesheets, scripts, and other assets over HTTPS connections. Otherwise, you'll be sending users [mixed active content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content), leading to potential vulnerabilities where a site can be compromised by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you're getting Bootstrap from a CDN or serving it yourself, ensure that you only access it over HTTPS connections.
+Sites served over HTTPS should also access all stylesheets, scripts, and other assets over HTTPS connections. Otherwise, you'll be sending users [mixed active content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content), leading to potential vulnerabilities where a site can be compromised by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you're getting Snowdrop from a CDN or serving it yourself, ensure that you only access it over HTTPS connections.

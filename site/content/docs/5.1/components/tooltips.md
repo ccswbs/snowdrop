@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Tooltips
-description: Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.
+description: Documentation and examples for adding custom Snowdrop tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.
 group: components
 toc: true
 ---
@@ -50,7 +50,7 @@ Hover over the links below to see tooltips:
   </p>
 </div>
 
-Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL.
+Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Snowdrop in RTL.
 
 <div class="bd-example tooltip-demo">
   <div class="bd-example-tooltips">
@@ -313,8 +313,8 @@ Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList` opt
       <td>null | object | function</td>
       <td><code>null</code></td>
       <td>
-        <p>To change Bootstrap's default Popper config, see <a href="https://popper.js.org/docs/v2/constructors/#options">Popper's configuration</a>.</p>
-        <p>When a function is used to create the Popper configuration, it's called with an object that contains the Bootstrap's default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a configuration object for Popper.</p>
+        <p>To change Snowdrop's default Popper config, see <a href="https://popper.js.org/docs/v2/constructors/#options">Popper's configuration</a>.</p>
+        <p>When a function is used to create the Popper configuration, it's called with an object that contains the Snowdrop's default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a configuration object for Popper.</p>
       </td>
     </tr>
   </tbody>
@@ -414,7 +414,7 @@ tooltip.update()
 
 ```js
 var exampleTriggerEl = document.getElementById('example')
-var tooltip = bootstrap.Tooltip.getInstance(exampleTriggerEl) // Returns a Bootstrap tooltip instance
+var tooltip = bootstrap.Tooltip.getInstance(exampleTriggerEl) // Returns a Snowdrop tooltip instance
 ```
 
 #### getOrCreateInstance
@@ -423,7 +423,7 @@ var tooltip = bootstrap.Tooltip.getInstance(exampleTriggerEl) // Returns a Boots
 
 ```js
 var exampleTriggerEl = document.getElementById('example')
-var tooltip = bootstrap.Tooltip.getOrCreateInstance(exampleTriggerEl) // Returns a Bootstrap tooltip instance
+var tooltip = bootstrap.Tooltip.getOrCreateInstance(exampleTriggerEl) // Returns a Snowdrop tooltip instance
 ```
 
 ### Events

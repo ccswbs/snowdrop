@@ -630,7 +630,7 @@ Responsive variations also exist for `align-content`.
 
 ## Media object
 
-Looking to replicate the [media object component](https://getbootstrap.com/docs/4.6/components/media-object/) from Bootstrap 4? Recreate it in no time with a few flex utilities that allow even more flexibility and customization than before.
+Looking to replicate the [media object component](https://getbootstrap.com/docs/4.6/components/media-object/) from Snowdrop 4? Recreate it in no time with a few flex utilities that allow even more flexibility and customization than before.
 
 {{< example >}}
 <div class="d-flex">

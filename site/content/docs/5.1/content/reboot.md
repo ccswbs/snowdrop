@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Reboot
-description: Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon.
+description: Reboot, a collection of element-specific CSS changes in a single file, kickstart Snowdrop to provide an elegant, consistent, and simple baseline to build upon.
 group: content
 aliases: "/docs/5.1/content/"
 toc: true
@@ -22,7 +22,7 @@ Here are our guidelines and reasons for choosing what to override in Reboot:
 
 <small class="d-inline-flex px-2 py-1 font-monospace text-muted border rounded-3">Added in v5.1.1</small>
 
-With v5.1.1, we standardized our required `@import`s across all our CSS bundles (including `bootstrap.css`, `bootstrap-reboot.css`, and `bootstrap-grid.css` to include `_root.scss` . This adds `:root` level CSS variables to all bundles, regardless of how many of them are used in that bundle. Ultimately Bootstrap 5 will continue to see more CSS variables added over time.
+With v5.1.1, we standardized our required `@import`s across all our CSS bundles (including `bootstrap.css`, `bootstrap-reboot.css`, and `bootstrap-grid.css` to include `_root.scss` . This adds `:root` level CSS variables to all bundles, regardless of how many of them are used in that bundle. Ultimately Snowdrop 5 will continue to see more CSS variables added over time.
 
 ## Page defaults
 
@@ -35,7 +35,7 @@ The `<html>` and `<body>` elements are updated to provide better page-wide defau
 
 ## Native font stack
 
-Bootstrap utilizes a "native font stack" or "system font stack" for optimum text rendering on every device and OS. These system fonts have been designed specifically with today's devices in mind, with improved rendering on screens, variable font support, and more. Read more about [native font stacks in this *Smashing Magazine* article](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/).
+Snowdrop utilizes a "native font stack" or "system font stack" for optimum text rendering on every device and OS. These system fonts have been designed specifically with today's devices in mind, with improved rendering on screens, variable font support, and more. Read more about [native font stacks in this *Smashing Magazine* article](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/).
 
 ```scss
 $font-family-sans-serif:
@@ -60,11 +60,11 @@ $font-family-sans-serif:
 
 Note that because the font stack includes emoji fonts, many common symbol/dingbat unicode characters will be rendered as multi-colored pictographs. Their appearance will vary, depending on the style used in the browser/platform's native emoji font, and they won't be affected by any CSS `color` styles.
 
-This `font-family` is applied to the `<body>` and automatically inherited globally throughout Bootstrap. To switch the global `font-family`, update `$font-family-base` and recompile Bootstrap.
+This `font-family` is applied to the `<body>` and automatically inherited globally throughout Snowdrop. To switch the global `font-family`, update `$font-family-base` and recompile Snowdrop.
 
 ## CSS variables
 
-As Bootstrap 5 continues to mature, more and more styles will be built with [CSS variables]({{< docsref "/customize/css-variables" >}}) as a means to provide more real-time customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way, even if you don't use CSS variables, you still have all the power of Sass. **This is still in-progress and will take time to fully implement.**
+As Snowdrop 5 continues to mature, more and more styles will be built with [CSS variables]({{< docsref "/customize/css-variables" >}}) as a means to provide more real-time customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way, even if you don't use CSS variables, you still have all the power of Sass. **This is still in-progress and will take time to fully implement.**
 
 For example, consider these `:root` CSS variables for common `<body>` styles:
 
@@ -98,37 +98,37 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
       <td>
         {{< markdown >}}`<h1></h1>`{{< /markdown >}}
       </td>
-      <td><span class="h1">h1. Bootstrap heading</span></td>
+      <td><span class="h1">h1. Snowdrop heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h2></h2>`{{< /markdown >}}
       </td>
-      <td><span class="h2">h2. Bootstrap heading</span></td>
+      <td><span class="h2">h2. Snowdrop heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h3></h3>`{{< /markdown >}}
       </td>
-      <td><span class="h3">h3. Bootstrap heading</span></td>
+      <td><span class="h3">h3. Snowdrop heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h4></h4>`{{< /markdown >}}
       </td>
-      <td><span class="h4">h4. Bootstrap heading</span></td>
+      <td><span class="h4">h4. Snowdrop heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h5></h5>`{{< /markdown >}}
       </td>
-      <td><span class="h5">h5. Bootstrap heading</span></td>
+      <td><span class="h5">h5. Snowdrop heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h6></h6>`{{< /markdown >}}
       </td>
-      <td><span class="h6">h6. Bootstrap heading</span></td>
+      <td><span class="h6">h6. Snowdrop heading</span></td>
     </tr>
   </tbody>
 </table>

@@ -1,24 +1,24 @@
 ---
 layout: docs
 title: Dropdowns
-description: Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+description: Toggle contextual overlays for displaying lists of links and more with the Snowdrop dropdown plugin.
 group: components
 toc: true
 ---
 
 ## Overview
 
-Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They're made interactive with the included Bootstrap dropdown JavaScript plugin. They're toggled by clicking, not by hovering; this is [an intentional design decision](https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/).
+Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They're made interactive with the included Snowdrop dropdown JavaScript plugin. They're toggled by clicking, not by hovering; this is [an intentional design decision](https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/).
 
-Dropdowns are built on a third party library, [Popper](https://popper.js.org/), which provides dynamic positioning and viewport detection. Be sure to include [popper.min.js]({{< param "cdn.popper" >}}) before Bootstrap's JavaScript or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper. Popper isn't used to position dropdowns in navbars though as dynamic positioning isn't required.
+Dropdowns are built on a third party library, [Popper](https://popper.js.org/), which provides dynamic positioning and viewport detection. Be sure to include [popper.min.js]({{< param "cdn.popper" >}}) before Snowdrop's JavaScript or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper. Popper isn't used to position dropdowns in navbars though as dynamic positioning isn't required.
 
 ## Accessibility
 
 The [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr>](https://www.w3.org/TR/wai-aria/) standard defines an actual [`role="menu"` widget](https://www.w3.org/WAI/PF/aria/roles#menu), but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.
 
-Bootstrap's dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of the `role` and `aria-` attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include these more specific attributes themselves.
+Snowdrop's dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Snowdrop does not expect (nor automatically add) any of the `role` and `aria-` attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include these more specific attributes themselves.
 
-However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual `.dropdown-item` elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.
+However, Snowdrop does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual `.dropdown-item` elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.
 
 ## Examples
 
@@ -397,7 +397,7 @@ And putting it to use in a navbar:
 
 {{< callout info >}}
 #### RTL
-Directions are mirrored when using Bootstrap in RTL, meaning `.dropstart` will appear on the right side.
+Directions are mirrored when using Snowdrop in RTL, meaning `.dropstart` will appear on the right side.
 {{< /callout >}}
 
 ### Dropup
@@ -637,7 +637,7 @@ Add `.disabled` to items in the dropdown to **style them as disabled**.
 
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. You can change this with the directional `.drop*` classes, but you can also control them with additional modifier classes.
 
-Add `.dropdown-menu-end` to a `.dropdown-menu` to right align the dropdown menu. Directions are mirrored when using Bootstrap in RTL, meaning `.dropdown-menu-end` will appear on the left side.
+Add `.dropdown-menu-end` to a `.dropdown-menu` to right align the dropdown menu. Directions are mirrored when using Snowdrop in RTL, meaning `.dropdown-menu-end` will appear on the left side.
 
 {{< callout info >}}
 **Heads up!** Dropdowns are positioned thanks to Popper except when they are contained in a navbar.
@@ -1076,8 +1076,8 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>null | object | function</td>
       <td><code>null</code></td>
       <td>
-        <p>To change Bootstrap's default Popper config, see <a href="https://popper.js.org/docs/v2/constructors/#options">Popper's configuration</a>.</p>
-        <p>When a function is used to create the Popper configuration, it's called with an object that contains the Bootstrap's default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a configuration object for Popper.</p>
+        <p>To change Snowdrop's default Popper config, see <a href="https://popper.js.org/docs/v2/constructors/#options">Popper's configuration</a>.</p>
+        <p>When a function is used to create the Popper configuration, it's called with an object that contains the Snowdrop's default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a configuration object for Popper.</p>
       </td>
     </tr>
   </tbody>

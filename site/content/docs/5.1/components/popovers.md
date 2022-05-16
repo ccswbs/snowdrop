@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Popovers
-description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
+description: Documentation and examples for adding Snowdrop popovers, like those found in iOS, to any element on your site.
 group: components
 toc: true
 ---
@@ -60,7 +60,7 @@ var popover = new bootstrap.Popover(document.querySelector('.example-popover'), 
 
 ### Four directions
 
-Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Bootstrap in RTL.
+Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Snowdrop in RTL.
 
 {{< example >}}
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
@@ -288,8 +288,8 @@ Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList` opt
       <td>null | object | function</td>
       <td><code>null</code></td>
       <td>
-        <p>To change Bootstrap's default Popper config, see <a href="https://popper.js.org/docs/v2/constructors/#options">Popper's configuration</a>.</p>
-        <p>When a function is used to create the Popper configuration, it's called with an object that contains the Bootstrap's default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a configuration object for Popper.</p>
+        <p>To change Snowdrop's default Popper config, see <a href="https://popper.js.org/docs/v2/constructors/#options">Popper's configuration</a>.</p>
+        <p>When a function is used to create the Popper configuration, it's called with an object that contains the Snowdrop's default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a configuration object for Popper.</p>
       </td>
     </tr>
   </tbody>
@@ -390,7 +390,7 @@ myPopover.update()
 
 ```js
 var exampleTriggerEl = document.getElementById('example')
-var popover = bootstrap.Popover.getInstance(exampleTriggerEl) // Returns a Bootstrap popover instance
+var popover = bootstrap.Popover.getInstance(exampleTriggerEl) // Returns a Snowdrop popover instance
 ```
 
 #### getOrCreateInstance
@@ -399,7 +399,7 @@ var popover = bootstrap.Popover.getInstance(exampleTriggerEl) // Returns a Boots
 
 ```js
 var exampleTriggerEl = document.getElementById('example')
-var popover = bootstrap.Popover.getOrCreateInstance(exampleTriggerEl) // Returns a Bootstrap popover instance
+var popover = bootstrap.Popover.getOrCreateInstance(exampleTriggerEl) // Returns a Snowdrop popover instance
 ```
 
 ### Events

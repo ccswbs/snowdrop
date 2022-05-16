@@ -1,20 +1,20 @@
 ---
 layout: docs
 title: JavaScript
-description: Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.
+description: Bring Snowdrop to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.
 group: getting-started
 toc: true
 ---
 
 ## Individual or compiled
 
-Plugins can be included individually (using Bootstrap's individual `js/dist/*.js`), or all at once using `bootstrap.js` or the minified `bootstrap.min.js` (don't include both).
+Plugins can be included individually (using Snowdrop's individual `js/dist/*.js`), or all at once using `bootstrap.js` or the minified `bootstrap.min.js` (don't include both).
 
 If you use a bundler (Webpack, Rollup...), you can use `/js/dist/*.js` files which are UMD ready.
 
-## Using Bootstrap as a module
+## Using Snowdrop as a module
 
-We provide a version of Bootstrap built as `ESM` (`bootstrap.esm.js` and `bootstrap.esm.min.js`) which allows you to use Bootstrap as a module in your browser, if your [targeted browsers support it](https://caniuse.com/es6-module).
+We provide a version of Snowdrop built as `ESM` (`bootstrap.esm.js` and `bootstrap.esm.min.js`) which allows you to use Snowdrop as a module in your browser, if your [targeted browsers support it](https://caniuse.com/es6-module).
 
 ```html
 <script type="module">
@@ -39,11 +39,11 @@ Our dropdowns, popovers and tooltips also depend on [Popper](https://popper.js.o
 
 ## Still want to use jQuery? It's possible!
 
-Bootstrap 5 is designed to be used without jQuery, but it's still possible to use our components with jQuery. **If Bootstrap detects `jQuery` in the `window` object** it'll add all of our components in jQuery's plugin system; this means you'll be able to do `$('[data-bs-toggle="tooltip"]').tooltip()` to enable tooltips. The same goes for our other components.
+Snowdrop 5 is designed to be used without jQuery, but it's still possible to use our components with jQuery. **If Snowdrop detects `jQuery` in the `window` object** it'll add all of our components in jQuery's plugin system; this means you'll be able to do `$('[data-bs-toggle="tooltip"]').tooltip()` to enable tooltips. The same goes for our other components.
 
 ## Data attributes
 
-Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to **only use one set of data attributes on a single element** (e.g., you cannot trigger a tooltip and modal from the same button.)
+Nearly all Snowdrop plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to **only use one set of data attributes on a single element** (e.g., you cannot trigger a tooltip and modal from the same button.)
 
 {{< callout warning >}}
 ## Selectors
@@ -54,7 +54,7 @@ If you use special selectors, for example: `collapse:Example` be sure to escape 
 
 ## Events
 
-Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. `show`) is triggered at the start of an event, and its past participle form (ex. `shown`) is triggered on the completion of an action.
+Snowdrop provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. `show`) is triggered at the start of an event, and its past participle form (ex. `shown`) is triggered on the completion of an action.
 
 All infinitive events provide [`preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call `preventDefault()`.
 
@@ -71,7 +71,7 @@ myModal.addEventListener('show.bs.modal', function (event) {
 {{< callout warning >}}
 ## jQuery events
 
-Bootstrap will detect jQuery if `jQuery` is present in the `window` object and there is no `data-bs-no-jquery` attribute set on `<body>`. If jQuery is found, Bootstrap will emit events thanks to jQuery's event system. So if you want to listen to Bootstrap's events, you'll have to use the jQuery methods (`.on`, `.one`) instead of `addEventListener`.
+Snowdrop will detect jQuery if `jQuery` is present in the `window` object and there is no `data-bs-no-jquery` attribute set on `<body>`. If jQuery is found, Snowdrop will emit events thanks to jQuery's event system. So if you want to listen to Snowdrop's events, you'll have to use the jQuery methods (`.on`, `.one`) instead of `addEventListener`.
 
 ```js
 $('#myTab a').on('shown.bs.tab', function () {
@@ -141,16 +141,16 @@ bootstrap.Modal.Default.keyboard = false
 
 ## No conflict (only if you use jQuery)
 
-Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call `.noConflict` on the plugin you wish to revert the value of.
+Sometimes it is necessary to use Snowdrop plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call `.noConflict` on the plugin you wish to revert the value of.
 
 ```js
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
-$.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
+$.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Snowdrop functionality
 ```
 
 ## Version numbers
 
-The version of each of Bootstrap's plugins can be accessed via the `VERSION` property of the plugin's constructor. For example, for the tooltip plugin:
+The version of each of Snowdrop's plugins can be accessed via the `VERSION` property of the plugin's constructor. For example, for the tooltip plugin:
 
 ```js
 bootstrap.Tooltip.VERSION // => "{{< param current_version >}}"
@@ -158,12 +158,12 @@ bootstrap.Tooltip.VERSION // => "{{< param current_version >}}"
 
 ## No special fallbacks when JavaScript is disabled
 
-Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
+Snowdrop's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
 
 {{< callout warning >}}
 ##### Third-party libraries
 
-**Bootstrap does not officially support third-party JavaScript libraries** like Prototype or jQuery UI. Despite `.noConflict` and namespaced events, there may be compatibility problems that you need to fix on your own.
+**Snowdrop does not officially support third-party JavaScript libraries** like Prototype or jQuery UI. Despite `.noConflict` and namespaced events, there may be compatibility problems that you need to fix on your own.
 {{< /callout >}}
 
 ## Sanitizer

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Progress
-description: Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.
+description: Documentation and examples for using Snowdrop custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.
 group: components
 toc: true
 ---
@@ -35,7 +35,7 @@ Put that all together, and you have the following examples.
 </div>
 {{< /example >}}
 
-Bootstrap provides a handful of [utilities for setting width]({{< docsref "/utilities/sizing" >}}). Depending on your needs, these may help with quickly configuring progress.
+Snowdrop provides a handful of [utilities for setting width]({{< docsref "/utilities/sizing" >}}). Depending on your needs, these may help with quickly configuring progress.
 
 {{< example >}}
 <div class="progress">

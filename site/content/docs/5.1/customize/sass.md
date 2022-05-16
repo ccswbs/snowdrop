@@ -10,7 +10,7 @@ Utilize our source Sass files to take advantage of variables, maps, mixins, and 
 
 ## File structure
 
-Whenever possible, avoid modifying Bootstrap's core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you're using a package manager like npm, you'll have a file structure that looks like this:
+Whenever possible, avoid modifying Snowdrop's core files. For Sass, that means creating your own stylesheet that imports Snowdrop so you can modify and extend it. Assuming you're using a package manager like npm, you'll have a file structure that looks like this:
 
 ```text
 your-project/
@@ -22,7 +22,7 @@ your-project/
         └── scss
 ```
 
-If you've downloaded our source files and aren't using a package manager, you'll want to manually setup something similar to that structure, keeping Bootstrap's source files separate from your own.
+If you've downloaded our source files and aren't using a package manager, you'll want to manually setup something similar to that structure, keeping Snowdrop's source files separate from your own.
 
 ```text
 your-project/
@@ -35,11 +35,11 @@ your-project/
 
 ## Importing
 
-In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two options: include all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.
+In your `custom.scss`, you'll import Snowdrop's source Sass files. You have two options: include all of Snowdrop, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.
 
 ```scss
 // Custom.scss
-// Option A: Include all of Bootstrap
+// Option A: Include all of Snowdrop
 
 // Include any default variable overrides here (though functions won't be available)
 
@@ -50,19 +50,19 @@ In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two
 
 ```scss
 // Custom.scss
-// Option B: Include parts of Bootstrap
+// Option B: Include parts of Snowdrop
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
-// 3. Include remainder of required Bootstrap stylesheets
+// 3. Include remainder of required Snowdrop stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 
-// 4. Include any optional Bootstrap CSS as needed
+// 4. Include any optional Snowdrop CSS as needed
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
@@ -77,17 +77,17 @@ In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two
 // 6. Add additional custom code here
 ```
 
-With that setup in place, you can begin to modify any of the Sass variables and maps in your `custom.scss`. You can also start to add parts of Bootstrap under the `// Optional` section as needed. We suggest using the full import stack from our `bootstrap.scss` file as your starting point.
+With that setup in place, you can begin to modify any of the Sass variables and maps in your `custom.scss`. You can also start to add parts of Snowdrop under the `// Optional` section as needed. We suggest using the full import stack from our `bootstrap.scss` file as your starting point.
 
 ## Variable defaults
 
-Every Sass variable in Bootstrap includes the `!default` flag allowing you to override the variable's default value in your own Sass without modifying Bootstrap's source code. Copy and paste variables as needed, modify their values, and remove the `!default` flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Bootstrap.
+Every Sass variable in Snowdrop includes the `!default` flag allowing you to override the variable's default value in your own Sass without modifying Snowdrop's source code. Copy and paste variables as needed, modify their values, and remove the `!default` flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Snowdrop.
 
-You will find the complete list of Bootstrap's variables in `scss/_variables.scss`. Some variables are set to `null`, these variables don't output the property unless they are overridden in your configuration.
+You will find the complete list of Snowdrop's variables in `scss/_variables.scss`. Some variables are set to `null`, these variables don't output the property unless they are overridden in your configuration.
 
 Variable overrides must come after our functions are imported, but before the rest of the imports.
 
-Here's an example that changes the `background-color` and `color` for the `<body>` when importing and compiling Bootstrap via npm:
+Here's an example that changes the `background-color` and `color` for the `<body>` when importing and compiling Snowdrop via npm:
 
 ```scss
 // Required
@@ -102,13 +102,13 @@ $body-color: #111;
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 
-// Optional Bootstrap components here
+// Optional Snowdrop components here
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 // etc
 ```
 
-Repeat as necessary for any variable in Bootstrap, including the global options below.
+Repeat as necessary for any variable in Snowdrop, including the global options below.
 
 {{< callout info >}}
 {{< partial "callout-info-npm-starter.md" >}}
@@ -116,7 +116,7 @@ Repeat as necessary for any variable in Bootstrap, including the global options 
 
 ## Maps and loops
 
-Bootstrap includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps include the `!default` flag and can be overridden and extended.
+Snowdrop includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps include the `!default` flag and can be overridden and extended.
 
 Some of our Sass maps are merged into empty ones by default. This is done to allow easy expansion of a given Sass map, but comes at the cost of making _removing_ items from a map slightly more difficult.
 
@@ -129,7 +129,7 @@ $primary: #0074d9;
 $danger: #ff4136;
 ```
 
-Later on, these variables are set in Bootstrap's `$theme-colors` map:
+Later on, these variables are set in Snowdrop's `$theme-colors` map:
 
 ```scss
 $theme-colors: (
@@ -173,7 +173,7 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
 
 ## Required keys
 
-Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors where a specific Sass map's key is being used.
+Snowdrop assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors where a specific Sass map's key is being used.
 
 For example, we use the `primary`, `success`, and `danger` keys from `$theme-colors` for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you'll need to modify the Sass code that makes use of those values.
 
@@ -190,7 +190,7 @@ Next to the [Sass maps]({{< docsref "/customize/color#color-sass-maps" >}}) we h
 }
 ```
 
-You can lighten or darken colors with Bootstrap's `tint-color()` and `shade-color()` functions. These functions will mix colors with black or white, unlike Sass' native `lighten()` and `darken()` functions which will change the lightness by a fixed amount, which often doesn't lead to the desired effect.
+You can lighten or darken colors with Snowdrop's `tint-color()` and `shade-color()` functions. These functions will mix colors with black or white, unlike Sass' native `lighten()` and `darken()` functions which will change the lightness by a fixed amount, which often doesn't lead to the desired effect.
 
 {{< scss-docs name="color-functions" file="scss/_functions.scss" >}}
 
@@ -210,7 +210,7 @@ In practice, you'd call the function and pass in the color and weight parameters
 
 In order to meet [WCAG 2.0 accessibility standards for color contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html), authors **must** provide [a contrast ratio of at least 4.5:1](https://www.w3.org/WAI/WCAG20/quickref/20160105/Overview.php#visual-audio-contrast-contrast), with very few exceptions.
 
-An additional function we include in Bootstrap is the color contrast function, `color-contrast`. It utilizes the [WCAG 2.0 algorithm](https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests) for calculating contrast thresholds based on [relative luminance](https://www.w3.org/WAI/GL/wiki/Relative_luminance) in a `sRGB` colorspace to automatically return a light (`#fff`), dark (`#212529`) or black (`#000`) contrast color based on the specified base color. This function is especially useful for mixins or loops where you're generating multiple classes.
+An additional function we include in Snowdrop is the color contrast function, `color-contrast`. It utilizes the [WCAG 2.0 algorithm](https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests) for calculating contrast thresholds based on [relative luminance](https://www.w3.org/WAI/GL/wiki/Relative_luminance) in a `sRGB` colorspace to automatically return a light (`#fff`), dark (`#212529`) or black (`#000`) contrast color based on the specified base color. This function is especially useful for mixins or loops where you're generating multiple classes.
 
 For example, to generate color swatches from our `$theme-colors` map:
 
@@ -282,7 +282,7 @@ $border-width: 0;
 
 ## Mixins
 
-Our `scss/mixins/` directory has a ton of mixins that power parts of Bootstrap and can also be used across your own project.
+Our `scss/mixins/` directory has a ton of mixins that power parts of Snowdrop and can also be used across your own project.
 
 ### Color schemes
 

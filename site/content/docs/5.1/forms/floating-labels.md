@@ -8,7 +8,7 @@ toc: true
 
 ## Example
 
-Wrap a pair of `<input class="form-control">` and `<label>` elements in `.form-floating` to enable floating labels with Bootstrap's textual form fields. A `placeholder` is required on each `<input>` as our method of CSS-only floating labels uses the `:placeholder-shown` pseudo-element. Also note that the `<input>` must come first so we can utilize a sibling selector (e.g., `~`).
+Wrap a pair of `<input class="form-control">` and `<label>` elements in `.form-floating` to enable floating labels with Snowdrop's textual form fields. A `placeholder` is required on each `<input>` as our method of CSS-only floating labels uses the `:placeholder-shown` pseudo-element. Also note that the `<input>` must come first so we can utilize a sibling selector (e.g., `~`).
 
 {{< example >}}
 <div class="form-floating mb-3">
@@ -77,7 +77,7 @@ Other than `.form-control`, floating labels are only available on `.form-select`
 
 ## Layout
 
-When working with the Bootstrap grid system, be sure to place form elements within column classes.
+When working with the Snowdrop grid system, be sure to place form elements within column classes.
 
 {{< example >}}
 <div class="row g-2">

@@ -31,7 +31,7 @@ Toasts are as flexible as you need and have very little required markup. At a mi
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-    <strong class="me-auto">Bootstrap</strong>
+    <strong class="me-auto">Snowdrop</strong>
     <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
@@ -53,7 +53,7 @@ Click the button below to show a toast (positioned with our utilities in the low
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-      <strong class="me-auto">Bootstrap</strong>
+      <strong class="me-auto">Snowdrop</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -74,7 +74,7 @@ Click the button below to show a toast (positioned with our utilities in the low
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
+      <strong class="me-auto">Snowdrop</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -107,7 +107,7 @@ Toasts are slightly translucent to blend in with what's below them.
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-    <strong class="me-auto">Bootstrap</strong>
+    <strong class="me-auto">Snowdrop</strong>
     <small class="text-muted">11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
@@ -126,7 +126,7 @@ You can stack toasts by wrapping them in a toast container, which will verticall
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-      <strong class="me-auto">Bootstrap</strong>
+      <strong class="me-auto">Snowdrop</strong>
       <small class="text-muted">just now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -138,7 +138,7 @@ You can stack toasts by wrapping them in a toast container, which will verticall
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-      <strong class="me-auto">Bootstrap</strong>
+      <strong class="me-auto">Snowdrop</strong>
       <small class="text-muted">2 seconds ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -151,7 +151,7 @@ You can stack toasts by wrapping them in a toast container, which will verticall
 
 ### Custom content
 
-Customize your toasts by removing sub-components, tweaking them with [utilities]({{< docsref "/utilities/api" >}}), or by adding your own markup. Here we've created a simpler toast by removing the default `.toast-header`, adding a custom hide icon from [Bootstrap Icons]({{< param icons >}}), and using some [flexbox utilities]({{< docsref "/utilities/flex" >}}) to adjust the layout.
+Customize your toasts by removing sub-components, tweaking them with [utilities]({{< docsref "/utilities/api" >}}), or by adding your own markup. Here we've created a simpler toast by removing the default `.toast-header`, adding a custom hide icon from [Snowdrop Icons]({{< param icons >}}), and using some [flexbox utilities]({{< docsref "/utilities/flex" >}}) to adjust the layout.
 
 {{< example class="bg-light" >}}
 <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
@@ -220,7 +220,7 @@ Place toasts with custom CSS as you need them. The top right is often used for n
     <div class="toast">
       <div class="toast-header">
         {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-        <strong class="me-auto">Bootstrap</strong>
+        <strong class="me-auto">Snowdrop</strong>
         <small>11 mins ago</small>
       </div>
       <div class="toast-body">
@@ -245,7 +245,7 @@ For systems that generate more notifications, consider using a wrapping element 
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
         {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-        <strong class="me-auto">Bootstrap</strong>
+        <strong class="me-auto">Snowdrop</strong>
         <small class="text-muted">just now</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
@@ -257,7 +257,7 @@ For systems that generate more notifications, consider using a wrapping element 
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
         {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-        <strong class="me-auto">Bootstrap</strong>
+        <strong class="me-auto">Snowdrop</strong>
         <small class="text-muted">2 seconds ago</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
@@ -279,7 +279,7 @@ You can also get fancy with flexbox utilities to align toasts horizontally and/o
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-      <strong class="me-auto">Bootstrap</strong>
+      <strong class="me-auto">Snowdrop</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -312,7 +312,7 @@ When using `autohide: false`, you must add a close button to allow users to dism
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-    <strong class="me-auto">Bootstrap</strong>
+    <strong class="me-auto">Snowdrop</strong>
     <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
@@ -419,7 +419,7 @@ toast.dispose()
 
 ```js
 var myToastEl = document.getElementById('myToastEl')
-var myToast = bootstrap.Toast.getInstance(myToastEl) // Returns a Bootstrap toast instance
+var myToast = bootstrap.Toast.getInstance(myToastEl) // Returns a Snowdrop toast instance
 ```
 
 #### getOrCreateInstance
@@ -428,7 +428,7 @@ var myToast = bootstrap.Toast.getInstance(myToastEl) // Returns a Bootstrap toas
 
 ```js
 var myToastEl = document.getElementById('myToastEl')
-var myToast = bootstrap.Toast.getOrCreateInstance(myToastEl) // Returns a Bootstrap toast instance
+var myToast = bootstrap.Toast.getOrCreateInstance(myToastEl) // Returns a Snowdrop toast instance
 ```
 
 ### Events

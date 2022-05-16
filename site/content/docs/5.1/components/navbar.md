@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Navbar
-description: Documentation and examples for Bootstrap's powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.
+description: Documentation and examples for Snowdrop's powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.
 group: components
 toc: true
 ---
@@ -123,7 +123,7 @@ You can also make use of some additional utilities to add an image and text at t
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="/docs/{{< param docs_version >}}/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
+      Snowdrop
     </a>
   </div>
 </nav>
