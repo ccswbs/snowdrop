@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Snowdrop, the world's most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.
+description: Get started with Snowdrop, the University of Guelph's framework for building responsive, mobile-first sites.
 group: getting-started
 aliases:
   - "/docs/5.1/getting-started/"

@@ -1,5 +1,5 @@
 languageCode:           "en"
-title:                  "Bootstrap"
+title:                  "Snowdrop"
 baseURL:                "https://getbootstrap.com"
 
 security:
@@ -73,14 +73,14 @@ params:
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    css_hash:         "sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    css:              "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/css/snowdrop.min.css"
+    css_hash:         "sha384-rFNEnbZryCwg3RvqQAiYLywmAf/o/s1WNbvYYomaC8/uceo0KXquqRnSxK4C8cqj"
     css_rtl:          "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
     css_rtl_hash:     "sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
-    js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    js_hash:          "sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    js_bundle_hash:   "sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    js:               "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/js/snowdrop.min.js"
+    js_hash:          "sha384-CqL5VoBM60od+hffPxH5uST8TXRyY8iGxasX6TgKsYwZF5aiZpf1unZLH7xqyd9x"
+    js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/snowdrop.bundle.min.js"
+    js_bundle_hash:   "sha384-/reCR9/hRvGdYiAeyMI3082VPb1FQ+R46r4M4Jw0iWNKJeXXmy/xj0dbKwgjtMZG"
     popper:           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     popper_hash:      "sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
 
