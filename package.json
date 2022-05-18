@@ -17,7 +17,7 @@
     "docs": "npm-run-all docs-build",
     "docs-build": "hugo --cleanDestinationDir",
     "docs-compile": "npm run docs-build",
-    "docs-serve": "hugo server --port 9001 --disableFastRender",
+    "docs-serve": "hugo server --port 9001 --bind 0.0.0.0 --disableFastRender",
     "docs-serve-only": "npx sirv-cli _site --port 9001",
     "release": "npm-run-all dist release-zip",
     "release-zip": "cross-env-shell \"rm -rf snowdrop-$npm_package_version-dist && cp -r dist/ snowdrop-$npm_package_version-dist && zip -r9 snowdrop-$npm_package_version-dist.zip snowdrop-$npm_package_version-dist && rm -rf snowdrop-$npm_package_version-dist\"",
