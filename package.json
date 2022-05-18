@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "css": "npm-run-all css-compile css-minify",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
+    "css-compile": "sass -I. --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "js": "npm-run-all js-compile js-minify",
     "js-compile": "npm-run-all --aggregate-output --parallel js-compile-*",
