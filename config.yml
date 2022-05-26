@@ -64,7 +64,7 @@ params:
   opencollective:       "https://opencollective.com/bootstrap"
   blog:                 "https://blog.getbootstrap.com/"
   themes:               "https://themes.getbootstrap.com/"
-  icons:                "https://icons.getbootstrap.com/"
+  icons:                "https://fontawesome.com/"
 
   download:
     source:             "https://github.com/twbs/bootstrap/archive/v1.0.2.zip"

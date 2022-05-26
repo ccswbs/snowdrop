@@ -1,6 +1,8 @@
 /*!
   * Snowdrop v1.0.3-dev (undefined)
   * Copyright 2022 M. Brent Harp <brharp@uoguelph.ca>
+  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
