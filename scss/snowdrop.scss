@@ -1,18 +1,5 @@
 
 
-
-// For reasons lost to the sands of time, the base font
-// size of the U of G home page has always been 10px.
-// As a result many global styles (including such things as
-// the global header) use HUGE (relative) font sizes to make
-// the text readable. To compensate we set the base size to
-// the original 10px and adjust the base font size to 1.6rem
-// to restore a more reasonable 16px base font size.
-
-html { font-size: 10px; }
-$font-size-base: 1.6rem;
-
-
 // Color system
 
 $red:     #c20430;   // U of G red
@@ -70,26 +57,6 @@ $input-btn-padding-x: 1.5rem;
 
 $input-btn-padding-y-lg: .75rem;
 $input-btn-padding-x-lg: 4rem;
-
-
-// Grid containers
-
-//$container-max-widths: (
-  //sm: 540px,
-  //md: 720px,
-  //lg: 960px,
-  //xl: 1400px,
-  //xxl: 1400px
-//);
-//
-//$grid-breakpoints: (
-  //xs: 0,
-  //sm: 576px,
-  //md: 768px,
-  //lg: 992px,
-  //xl: 1432px,
-  //xxl: 1400px
-//);
 
 
 // Bring in Bootstrap

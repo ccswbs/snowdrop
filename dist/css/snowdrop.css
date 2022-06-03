@@ -1,8 +1,4 @@
 @charset "UTF-8";
-html {
-  font-size: 10px;
-}
-
 .bg-variegated {
   background: linear-gradient(90deg, var(--bs-dark) 25%, var(--bs-yellow) 25%, var(--bs-yellow) 50%, var(--bs-red) 50%, var(--bs-red) 75%, var(--bs-blue) 75%);
 }
@@ -60,7 +56,7 @@ html {
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.6rem;
+  --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -112,57 +108,47 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.445rem + 2.34vw);
-}
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 3.2rem;
-  }
-}
-
-h3, .h3 {
-  font-size: calc(1.405rem + 1.86vw);
-}
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 2.8rem;
-  }
-}
-
-h4, .h4 {
-  font-size: calc(1.365rem + 1.38vw);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 2.4rem;
-  }
-}
-
-h5, .h5 {
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
-  h5, .h5 {
+  h2, .h2 {
     font-size: 2rem;
   }
 }
 
-h6, .h6 {
-  font-size: calc(1.285rem + 0.42vw);
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h6, .h6 {
-    font-size: 1.6rem;
+  h3, .h3 {
+    font-size: 1.75rem;
   }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
 }
 
 p {
@@ -494,13 +480,8 @@ progress {
 }
 
 .lead {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 1.25rem;
   font-weight: 300;
-}
-@media (min-width: 1200px) {
-  .lead {
-    font-size: 2rem;
-  }
 }
 
 .display-1 {
@@ -593,12 +574,7 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .blockquote {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -2185,23 +2161,13 @@ progress {
 .col-form-label-lg {
   padding-top: calc(0.75rem + 1px);
   padding-bottom: calc(0.75rem + 1px);
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .col-form-label-lg {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: calc(1.265rem + 0.18vw);
-}
-@media (min-width: 1200px) {
-  .col-form-label-sm {
-    font-size: 1.4rem;
-  }
+  font-size: 0.875rem;
 }
 
 .form-text {
@@ -2214,7 +2180,7 @@ progress {
   display: block;
   width: 100%;
   padding: 0.5625rem 1.5rem;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2224,11 +2190,6 @@ progress {
   appearance: none;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-@media (min-width: 1200px) {
-  .form-control {
-    font-size: 1.6rem;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -2323,12 +2284,7 @@ progress {
 .form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: calc(1.265rem + 0.18vw);
-}
-@media (min-width: 1200px) {
-  .form-control-sm {
-    font-size: 1.4rem;
-  }
+  font-size: 0.875rem;
 }
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
@@ -2344,12 +2300,7 @@ progress {
 .form-control-lg {
   min-height: calc(1.5em + 1.5rem + 2px);
   padding: 0.75rem 4rem;
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .form-control-lg {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 .form-control-lg::file-selector-button {
   padding: 0.75rem 4rem;
@@ -2392,7 +2343,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.5625rem 4.5rem 0.5625rem 1.5rem;
   -moz-padding-start: calc(1.5rem - 3px);
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2405,11 +2356,6 @@ textarea.form-control-lg {
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
-}
-@media (min-width: 1200px) {
-  .form-select {
-    font-size: 1.6rem;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .form-select {
@@ -2437,29 +2383,19 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: calc(1.265rem + 0.18vw);
-}
-@media (min-width: 1200px) {
-  .form-select-sm {
-    font-size: 1.4rem;
-  }
+  font-size: 0.875rem;
 }
 
 .form-select-lg {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 4rem;
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .form-select-lg {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 
 .form-check {
   display: block;
-  min-height: 2.4rem;
+  min-height: 1.5rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2716,7 +2652,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.5625rem 1.5rem;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2725,26 +2661,13 @@ textarea.form-control-lg {
   background-color: #e9ecef;
   border: 1px solid #ced4da;
 }
-@media (min-width: 1200px) {
-  .input-group-text {
-    font-size: 1.6rem;
-  }
-}
 
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.75rem 4rem;
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .input-group-lg > .form-control,
-.input-group-lg > .form-select,
-.input-group-lg > .input-group-text,
-.input-group-lg > .btn {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 
 .input-group-sm > .form-control,
@@ -2752,15 +2675,7 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: calc(1.265rem + 0.18vw);
-}
-@media (min-width: 1200px) {
-  .input-group-sm > .form-control,
-.input-group-sm > .form-select,
-.input-group-sm > .input-group-text,
-.input-group-sm > .btn {
-    font-size: 1.4rem;
-  }
+  font-size: 0.875rem;
 }
 
 .input-group-lg > .form-select,
@@ -2788,14 +2703,9 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 0.875rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
-}
-@media (min-width: 1200px) {
-  .valid-tooltip {
-    font-size: 1.4rem;
-  }
 }
 
 .was-validated :valid ~ .valid-feedback,
@@ -2881,14 +2791,9 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 0.875rem;
   color: #fff;
   background-color: rgba(194, 4, 48, 0.9);
-}
-@media (min-width: 1200px) {
-  .invalid-tooltip {
-    font-size: 1.4rem;
-  }
 }
 
 .was-validated :invalid ~ .invalid-feedback,
@@ -2971,14 +2876,9 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.5625rem 1.5rem;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-@media (min-width: 1200px) {
-  .btn {
-    font-size: 1.6rem;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -3451,24 +3351,14 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.75rem 4rem;
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 1.25rem;
   border-radius: 0;
-}
-@media (min-width: 1200px) {
-  .btn-lg, .btn-group-lg > .btn {
-    font-size: 2rem;
-  }
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 0.875rem;
   border-radius: 0;
-}
-@media (min-width: 1200px) {
-  .btn-sm, .btn-group-sm > .btn {
-    font-size: 1.4rem;
-  }
 }
 
 .fade {
@@ -3539,18 +3429,13 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-}
-@media (min-width: 1200px) {
-  .dropdown-menu {
-    font-size: 1.6rem;
-  }
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -3778,14 +3663,9 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 0.875rem;
   color: #6c757d;
   white-space: nowrap;
-}
-@media (min-width: 1200px) {
-  .dropdown-header {
-    font-size: 1.4rem;
-  }
 }
 
 .dropdown-item-text {
@@ -4009,17 +3889,12 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
-}
-@media (min-width: 1200px) {
-  .navbar-brand {
-    font-size: 2rem;
-  }
 }
 .navbar-nav {
   display: flex;
@@ -4049,16 +3924,11 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   transition: box-shadow 0.15s ease-in-out;
-}
-@media (min-width: 1200px) {
-  .navbar-toggler {
-    font-size: 2rem;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4589,18 +4459,13 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   color: #212529;
   text-align: left;
   background-color: #fff;
   border: 0;
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-}
-@media (min-width: 1200px) {
-  .accordion-button {
-    font-size: 1.6rem;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
@@ -4747,21 +4612,11 @@ textarea.form-control-lg {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .pagination-lg .page-link {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: calc(1.265rem + 0.18vw);
-}
-@media (min-width: 1200px) {
-  .pagination-sm .page-link {
-    font-size: 1.4rem;
-  }
+  font-size: 0.875rem;
 }
 .badge {
   display: inline-block;
@@ -4890,7 +4745,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   background-color: #e9ecef;
 }
 
@@ -5527,14 +5382,9 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0;
-}
-@media (min-width: 1200px) {
-  .tooltip {
-    font-size: 1.4rem;
-  }
 }
 .tooltip.show {
   opacity: 0.9;
@@ -5633,16 +5483,11 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 0.875rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 1200px) {
-  .popover {
-    font-size: 1.4rem;
-  }
 }
 .popover .popover-arrow {
   position: absolute;
@@ -5731,14 +5576,9 @@ textarea.form-control-lg {
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: 1rem;
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 1200px) {
-  .popover-header {
-    font-size: 1.6rem;
-  }
 }
 .popover-header:empty {
   display: none;
@@ -7314,27 +7154,27 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.525rem + 3.3vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.445rem + 2.34vw) !important;
-}
-
-.fs-3 {
-  font-size: calc(1.405rem + 1.86vw) !important;
-}
-
-.fs-4 {
-  font-size: calc(1.365rem + 1.38vw) !important;
-}
-
-.fs-5 {
   font-size: calc(1.325rem + 0.9vw) !important;
 }
 
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+
+.fs-4 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
+.fs-5 {
+  font-size: 1.25rem !important;
+}
+
 .fs-6 {
-  font-size: calc(1.285rem + 0.42vw) !important;
+  font-size: 1rem !important;
 }
 
 .fst-italic {
@@ -10940,27 +10780,19 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 4rem !important;
+    font-size: 2.5rem !important;
   }
 
   .fs-2 {
-    font-size: 3.2rem !important;
-  }
-
-  .fs-3 {
-    font-size: 2.8rem !important;
-  }
-
-  .fs-4 {
-    font-size: 2.4rem !important;
-  }
-
-  .fs-5 {
     font-size: 2rem !important;
   }
 
-  .fs-6 {
-    font-size: 1.6rem !important;
+  .fs-3 {
+    font-size: 1.75rem !important;
+  }
+
+  .fs-4 {
+    font-size: 1.5rem !important;
   }
 }
 @media print {
