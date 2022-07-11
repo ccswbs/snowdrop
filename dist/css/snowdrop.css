@@ -10836,7 +10836,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.quicklinks {
+.d-quicklinks {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(256px, 100%), 1fr));
   grid-auto-rows: 1fr;

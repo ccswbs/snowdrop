@@ -1,5 +1,5 @@
 
-.quicklinks {
+.d-quicklinks {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min($quicklinks-column-min-width, 100%), 1fr));
   grid-auto-rows: 1fr;
