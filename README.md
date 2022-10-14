@@ -41,13 +41,18 @@ Install snowdrop in your npm project:
 $ npm install @uoguelph/snowdrop
 ```
 
-See Bootstrap's guide on [Using npm scripts](https://getbootstrap.com/docs/5.2/getting-started/contribute/#using-npm-scripts) for more information.
+To reference a specific Github branch, you can use the following syntax in your package.json file:
+```
+  "@uoguelph/snowdrop": "github:ccswbs/snowdrop#feature-branch",
+```
 
 ## Updating files
 
 1. Update the files under the scss directory
 2. If you wish, you can run `npm run dist` to update the distribution files.
 3. Commit your change.
+
+See Bootstrap's guide on [Sass](https://getbootstrap.com/docs/5.2/customize/sass/) and [using npm scripts](https://getbootstrap.com/docs/5.2/getting-started/contribute/#using-npm-scripts) for more information.
 
 ### Rules of thumb
 
