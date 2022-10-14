@@ -41,3 +41,21 @@ Install snowdrop in your npm project:
 $ npm install @uoguelph/snowdrop
 ```
 
+To reference a specific Github branch, you can use the following syntax in your package.json file:
+ ```
+   "@uoguelph/snowdrop": "github:ccswbs/snowdrop#feature-branch",
+ ```
+
+ ## Updating files
+
+ 1. Update the files under the scss directory
+ 2. Run `npm run dist` to update the distribution files.
+ 3. Commit your change.
+
+ See Bootstrap's guide on [Sass](https://getbootstrap.com/docs/5.2/customize/sass/) and [using npm scripts](https://getbootstrap.com/docs/5.2/getting-started/contribute/#using-npm-scripts) for more information.
+
+ ### Rules of thumb
+
+ - Use extreme caution before changing a global default style.
+ - Don't add anything new that can be accomplished with existing (Bootstrap) classes.
+ - Reference named colour variables (e.g $red, $blue) from the palette rather than using hex values (when possible)
