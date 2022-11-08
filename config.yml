@@ -3,6 +3,7 @@ title:                  "Snowdrop"
 baseURL:                "https://ccswbs.github.io/snowdrop"
 
 canonifyurls:             true
+relativeurls:             true
 
 security:
   enableInlineShortcodes: true
@@ -75,8 +76,10 @@ params:
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/css/snowdrop.min.css"
-    css_hash:         "sha384-rFNEnbZryCwg3RvqQAiYLywmAf/o/s1WNbvYYomaC8/uceo0KXquqRnSxK4C8cqj"
+    # css:              "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/css/snowdrop.min.css"
+    # css_hash:         "sha384-rFNEnbZryCwg3RvqQAiYLywmAf/o/s1WNbvYYomaC8/uceo0KXquqRnSxK4C8cqj"
+    css:              "https://ccswbs.github.io/snowdrop/docs/1.0/dist/css/snowdrop.min.css"
+    css_hash:         "sha384-/84wreJsasaXaBLe9/+VkFktEFrmzGXdi2X/qR8yqpUx8gRyabepXKt4jeJkL849"
     css_rtl:          "https://cdn.jsdelivr.net/npm/bootstrap@1.0.2/dist/css/bootstrap.rtl.min.css"
     css_rtl_hash:     "sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
     js:               "https://cdn.jsdelivr.net/npm/@uoguelph/snowdrop@1.0.2/dist/js/snowdrop.min.js"
