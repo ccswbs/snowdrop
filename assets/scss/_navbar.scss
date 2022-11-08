@@ -1,0 +1,35 @@
+.bd-navbar {
+  background: var(--bs-red);
+  background: linear-gradient(var(--bs-red) 150px,var(--bs-dark) 150px,var(--bs-dark) 100%);
+  @media (min-width: 768px) {
+    background: linear-gradient(var(--bs-dark) 20%,var(--bs-red) 20%,var(--bs-red) 80%,rgba(0,0,0,0.7) 80%);
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: 0;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding-right: $spacer * .25;
+      padding-left: $spacer * .25;
+      color: rgba($white, .85);
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+
+      &.active {
+        font-weight: 600;
+        color: $white;
+      }
+    }
+  }
+
+  .navbar-nav-svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
