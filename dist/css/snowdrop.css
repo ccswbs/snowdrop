@@ -3,6 +3,10 @@
   background: linear-gradient(90deg, var(--bs-dark) 25%, var(--bs-yellow) 25%, var(--bs-yellow) 50%, var(--bs-red) 50%, var(--bs-red) 75%, var(--bs-blue) 75%);
 }
 
+h1, .h1, h2, .h2 {
+  color: #c20430;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

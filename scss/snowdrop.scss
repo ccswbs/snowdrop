@@ -49,6 +49,10 @@ $container-max-widths: (
 
 // Typography
 
+h1, h2 {
+  color: $red;
+}
+
 $headings-color: #212529;
 $headings-font-weight: 600;
 $hr-border-color: $yellow;
