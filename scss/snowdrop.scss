@@ -108,21 +108,27 @@ $enable-negative-margins: true;
 
 // Grid system
 
-// Example usage
+
 /*
-<div class="site-content">
-  <div class="content-area">
-    <div class="row">
-      <div class="col">Content here</div>
+
+// Example usage
+
+<div class="container page-container">
+  <div class="site-content">
+    <div class="content-area">
+      <div class="row">
+        <div class="col">Content here</div>
+      </div>
     </div>
   </div>
 </div>
+
 */
 
 // Usage
 
 .site-content {
-    @include make-container($spacer * 2);
+    padding: 2rem;
 }
 
 // Typography
