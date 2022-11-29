@@ -6641,10 +6641,8 @@ progress {
   padding: 2rem;
 }
 
-.site-content .content-area h1, .site-content .content-area .h1,
-.site-content .content-area h2,
-.site-content .content-area .h2 {
-  color: #c20430;
+.content-area {
+  padding-top: 3rem;
 }
 
 .d-quicklinks {

@@ -128,14 +128,11 @@ $enable-negative-margins: true;
 // Usage
 
 .site-content {
-    padding: 2rem;
+  padding: 2rem;
 }
 
-// Typography
-
-.site-content .content-area h1, 
-.site-content .content-area h2 {
-  color: $red;
+.content-area {
+  padding-top: 3rem;
 }
 
 // Custom components
