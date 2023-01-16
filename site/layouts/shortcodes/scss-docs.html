@@ -9,7 +9,7 @@
 */ -}}
 
 {{- $name := .Get "name" -}}
-{{- $file :=    .Get "file" -}}
+{{- $file := .Get "file" -}}
 {{- $strip_default := .Get "strip-default" | default "true" -}}
 
 {{- /* If any parameters are missing, print an error and exit */ -}}
@@ -25,7 +25,7 @@
     $regex := printf `(?:// scss-docs-start %s\n)((?:.|\n)*)(?:\n// scss-docs-end %s)` $name $name
   */ -}}
 
-  {{- $match := findRE $regex (readFile (printf "node_modules/bootstrap/%s" $file)) -}}
+  {{- $match := findRE $regex (readFile $file) -}}
   {{- $match = index $match 0 -}}
 
   {{- if not $match -}}
