@@ -3,7 +3,7 @@ layout: docs
 title: Checks and radios
 description: Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.
 group: forms
-aliases: "/docs/5.3/forms/checks/"
+aliases: "/docs/5.2/forms/checks/"
 toc: true
 ---
 
@@ -304,10 +304,4 @@ Different variants of `.btn`, such at the various outlined styles, are supported
 
 ### Variables
 
-Variables for checks:
-
 {{< scss-docs name="form-check-variables" file="scss/_variables.scss" >}}
-
-Variables for switches:
-
-{{< scss-docs name="form-switch-variables" file="scss/_variables.scss" >}}

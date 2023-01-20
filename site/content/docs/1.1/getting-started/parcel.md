@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Bootstrap and Parcel
+title: "Bootstrap & Parcel"
 description: The official guide for how to include and bundle Bootstrap's CSS and JavaScript in your project using Parcel.
 group: getting-started
 toc: true
@@ -88,7 +88,7 @@ With dependencies installed and our project folder ready for us to start coding,
    </html>
    ```
 
-   We're including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap's CSS is loaded by Parcel.
+   We're including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap's CSS is loaded by Webpack.
 
    Parcel will automatically detect we're using Sass and install the [Sass Parcel plugin](https://parceljs.org/languages/sass/) to support it. However, if you wish, you can also manually run `npm i --save-dev @parcel/transformer-sass`.
 

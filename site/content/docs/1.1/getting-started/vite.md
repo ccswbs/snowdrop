@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Bootstrap and Vite
+title: "Bootstrap & Vite"
 description: The official guide for how to include and bundle Bootstrap's CSS and JavaScript in your project using Vite.
 group: getting-started
 toc: true
@@ -35,7 +35,6 @@ We're building a Vite project with Bootstrap from scratch, so there are some pre
    ```sh
    npm i --save bootstrap @popperjs/core
    ```
-
 4. **Install additional dependency.** In addition to Vite and Bootstrap, we need another dependency (Sass) to properly import and bundle Bootstrap's CSS.
 
    ```sh

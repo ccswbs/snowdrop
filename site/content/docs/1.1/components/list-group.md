@@ -154,11 +154,7 @@ Add `.list-group-horizontal` to change the layout of list group items from verti
 {{< /list-group.inline >}}
 {{< /example >}}
 
-## Variants
-
-{{< callout info >}}
-**Heads up!** As of v5.3.0, the `list-group-item-variant()` Sass mixin is deprecated. List group item variants now have their CSS variables overridden in [the Sass loop](#sass-loop).
-{{< /callout >}}
+## Contextual classes
 
 Use contextual classes to style list items with a stateful background and color.
 
@@ -173,9 +169,7 @@ Use contextual classes to style list items with a stateful background and color.
 </ul>
 {{< /example >}}
 
-### For links and buttons
-
-Contextual classes also work with `.list-group-item-action` for `<a>` and `<button>` elements. Note the addition of the hover styles here not present in the previous example. Also supported is the `.active` state; apply it to indicate an active selection on a contextual list group item.
+Contextual classes also work with `.list-group-item-action`. Note the addition of the hover styles here not present in the previous example. Also supported is the `.active` state; apply it to indicate an active selection on a contextual list group item.
 
 {{< example >}}
 <div class="list-group">
@@ -189,7 +183,7 @@ Contextual classes also work with `.list-group-item-action` for `<a>` and `<butt
 {{< /example >}}
 
 {{< callout info >}}
-{{< partial "callouts/warning-color-assistive-technologies.md" >}}
+{{< partial "callout-warning-color-assistive-technologies.md" >}}
 {{< /callout >}}
 
 ## With badges
@@ -317,17 +311,15 @@ As part of Bootstrap's evolving CSS variables approach, list groups now use loca
 
 {{< scss-docs name="list-group-variables" file="scss/_variables.scss" >}}
 
-### Sass mixins
+### Mixins
 
-{{< deprecated-in "5.3.0" >}}
-
-Used in combination with `$theme-colors` to generate the [contextual variant classes](#variants) for `.list-group-item`s.
+Used in combination with `$theme-colors` to generate the [contextual variant classes](#contextual-classes) for `.list-group-item`s.
 
 {{< scss-docs name="list-group-mixin" file="scss/mixins/_list-group.scss" >}}
 
-### Sass loop
+### Loop
 
-Loop that generates the modifier classes with an overriding of CSS variables.
+Loop that generates the modifier classes with the `list-group-item-variant()` mixin.
 
 {{< scss-docs name="list-group-modifiers" file="scss/_list-group.scss" >}}
 
@@ -451,7 +443,7 @@ To make tabs panel fade in, add `.fade` to each `.tab-pane`. The first tab pane 
 ### Methods
 
 {{< callout danger >}}
-{{< partial "callouts/danger-async-methods.md" >}}
+{{< partial "callout-danger-async-methods.md" >}}
 {{< /callout >}}
 
 Activates your content as a tab element.

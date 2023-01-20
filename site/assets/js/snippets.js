@@ -6,7 +6,8 @@
 
 /*!
  * JavaScript for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
@@ -19,7 +20,7 @@
   // --------
   // Tooltips
   // --------
-  // Instantiate all tooltips in a docs or StackBlitz
+  // Instantiate all tooltips in a docs or StackBlitz page
   document.querySelectorAll('[data-bs-toggle="tooltip"]')
     .forEach(tooltip => {
       new bootstrap.Tooltip(tooltip)
@@ -28,7 +29,7 @@
   // --------
   // Popovers
   // --------
-  // Instantiate all popovers in docs or StackBlitz
+  // Instantiate all popovers in a docs or StackBlitz page
   document.querySelectorAll('[data-bs-toggle="popover"]')
     .forEach(popover => {
       new bootstrap.Popover(popover)
@@ -49,7 +50,7 @@
     })
   }
 
-  // Instantiate all toasts in docs pages only
+  // Instantiate all toasts in a docs page only
   document.querySelectorAll('.bd-example .toast')
     .forEach(toastNode => {
       const toast = new bootstrap.Toast(toastNode, {
@@ -59,14 +60,14 @@
       toast.show()
     })
 
-  // Instantiate all toasts in docs pages only
+  // Instantiate all toasts in a docs page only
   const toastTrigger = document.getElementById('liveToastBtn')
   const toastLiveExample = document.getElementById('liveToast')
-
   if (toastTrigger) {
-    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
     toastTrigger.addEventListener('click', () => {
-      toastBootstrap.show()
+      const toast = new bootstrap.Toast(toastLiveExample)
+
+      toast.show()
     })
   }
 
@@ -94,15 +95,6 @@
       appendAlert('Nice, you triggered this alert message!', 'success')
     })
   }
-
-  // --------
-  // Carousels
-  // --------
-  // Instantiate all non-autoplaying carousels in docs or StackBlitz
-  document.querySelectorAll('.carousel:not([data-bs-ride="carousel"])')
-    .forEach(carousel => {
-      bootstrap.Carousel.getOrCreateInstance(carousel)
-    })
 
   // -------------------------------
   // Checks & Radios

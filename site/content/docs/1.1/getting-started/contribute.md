@@ -4,7 +4,7 @@ title: Contribute
 description: Help develop Bootstrap with our documentation build scripts and tests.
 group: getting-started
 toc: true
-aliases: "/docs/5.3/getting-started/build-tools/"
+aliases: "/docs/5.2/getting-started/build-tools/"
 ---
 
 ## Tooling setup
@@ -14,7 +14,7 @@ Bootstrap uses [npm scripts](https://docs.npmjs.com/misc/scripts/) to build the 
 To use our build system and run our documentation locally, you'll need a copy of Bootstrap's source files and Node. Follow these steps and you should be ready to rock:
 
 1. [Download and install Node.js](https://nodejs.org/en/download/), which we use to manage our dependencies.
-2. Either [download Bootstrap's sources]({{< param "download.source" >}}) or fork and clone [Bootstrap's repository]({{< param repo >}}).
+2. Either [download Bootstrap's sources]({{< param "download.source" >}}) or fork [Bootstrap's repository]({{< param repo >}}).
 3. Navigate to the root `/bootstrap` directory and run `npm install` to install our local dependencies listed in [package.json]({{< param repo >}}/blob/v{{< param current_version >}}/package.json).
 
 When completed, you'll be able to run the various commands provided from the command line.
@@ -33,7 +33,7 @@ Our [package.json]({{< param repo >}}/blob/v{{< param current_version >}}/packag
 {{< /bs-table >}}
 
 {{< callout info >}}
-{{< partial "callouts/info-npm-starter.md" >}}
+{{< partial "callout-info-npm-starter.md" >}}
 {{< /callout >}}
 
 ## Sass

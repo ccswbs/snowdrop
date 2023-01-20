@@ -82,34 +82,34 @@ Use `justify-content` utilities on flexbox containers to change the alignment of
 
 <div class="bd-example bd-example-flex">
   <div class="d-flex justify-content-start mb-3">
-    <div class="p-2 bd-highlight">Justify</div>
-    <div class="p-2 bd-highlight">Content</div>
-    <div class="p-2 bd-highlight">Start</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
   <div class="d-flex justify-content-end mb-3">
-    <div class="p-2 bd-highlight">Justify</div>
-    <div class="p-2 bd-highlight">Content</div>
-    <div class="p-2 bd-highlight">End</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
   <div class="d-flex justify-content-center mb-3">
-    <div class="p-2 bd-highlight">Justify</div>
-    <div class="p-2 bd-highlight">Content</div>
-    <div class="p-2 bd-highlight">Center</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
   <div class="d-flex justify-content-between mb-3">
-    <div class="p-2 bd-highlight">Justify</div>
-    <div class="p-2 bd-highlight">Content</div>
-    <div class="p-2 bd-highlight">Between</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
   <div class="d-flex justify-content-around mb-3">
-    <div class="p-2 bd-highlight">Justify</div>
-    <div class="p-2 bd-highlight">Content</div>
-    <div class="p-2 bd-highlight">Around</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
   <div class="d-flex justify-content-evenly">
-    <div class="p-2 bd-highlight">Justify</div>
-    <div class="p-2 bd-highlight">Content</div>
-    <div class="p-2 bd-highlight">Evenly</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
 </div>
 
@@ -363,20 +363,21 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 
 <div class="bd-example bd-example-flex">
   <div class="d-flex flex-wrap">
-    <div class="p-2">Flex item 1</div>
-    <div class="p-2">Flex item 2</div>
-    <div class="p-2">Flex item 3</div>
-    <div class="p-2">Flex item 4</div>
-    <div class="p-2">Flex item 5</div>
-    <div class="p-2">Flex item 6</div>
-    <div class="p-2">Flex item 7</div>
-    <div class="p-2">Flex item 8</div>
-    <div class="p-2">Flex item 9</div>
-    <div class="p-2">Flex item 10</div>
-    <div class="p-2">Flex item 11</div>
-    <div class="p-2">Flex item 12</div>
-    <div class="p-2">Flex item 13</div>
-    <div class="p-2">Flex item 14</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
 </div>
 
@@ -388,20 +389,21 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 
 <div class="bd-example bd-example-flex">
   <div class="d-flex flex-wrap-reverse">
-    <div class="p-2">Flex item 1</div>
-    <div class="p-2">Flex item 2</div>
-    <div class="p-2">Flex item 3</div>
-    <div class="p-2">Flex item 4</div>
-    <div class="p-2">Flex item 5</div>
-    <div class="p-2">Flex item 6</div>
-    <div class="p-2">Flex item 7</div>
-    <div class="p-2">Flex item 8</div>
-    <div class="p-2">Flex item 9</div>
-    <div class="p-2">Flex item 10</div>
-    <div class="p-2">Flex item 11</div>
-    <div class="p-2">Flex item 12</div>
-    <div class="p-2">Flex item 13</div>
-    <div class="p-2">Flex item 14</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
   </div>
 </div>
 
@@ -462,7 +464,7 @@ Additionally there are also responsive `.order-first` and `.order-last` classes 
 
 ## Align content
 
-Use `align-content` utilities on flexbox containers to align flex items _together_ on the cross axis. Choose from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`. To demonstrate these utilities, we've enforced `flex-wrap: wrap` and increased the number of flex items.
+Use `align-content` utilities on flexbox containers to align flex items *together* on the cross axis. Choose from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`. To demonstrate these utilities, we've enforced `flex-wrap: wrap` and increased the number of flex items.
 
 **Heads up!** This property has no effect on single rows of flex items.
 

@@ -59,3 +59,38 @@ To reference a specific Github branch, you can use the following syntax in your 
  - Use extreme caution before changing a global default style.
  - Don't add anything new that can be accomplished with existing (Bootstrap) classes.
  - Reference named colour variables (e.g $red, $blue) from the palette rather than using hex values (when possible)
+
+ # Upgrading Bootstrap version
+
+ 1. Update the version of Bootstrap in package.json
+ 1. Rename the site folder as site_old
+ 1. Download the newer version of Bootstrap
+ 1. Copy the site folder into this repository
+ 1. Update your version number for Snowdrop in package.json and config.yml
+ 1. Under site/static/docs, rename the interior folder to match the new Snowdrop folder
+ 1. Under site/content/docs, rename the interior folder to match the new Snowdrop folder
+ 1. Do a search for "{{< scss-docs" throughout the site folder. You results will likely include lines like "{{< scss-docs name="something" file="scss/_something.scss" >}}". Take note of the file parameter.
+    1. If all the files start with "scss/", then go under site/layouts/shortcodes/scss-docs.html, and find the following code:
+ ```
+ {{- $match = findRE $regex (readFile $file) -}}
+ ```
+ Change it to
+ ```
+ {{- $match = findRE $regex (readFile (printf "node_modules/bootstrap/%s" $file)) -}}
+ ```
+   1. Alternatively, if most of the files do NOT start with "scss/" and instead start with something under the site folder, then go under site/layouts/shortcodes/scss-docs.html, and find the following code:
+ ```
+ {{- $match = findRE $regex (readFile $file) -}}
+ ```
+ Change it to
+ ```
+   {{- $match := "" -}}
+  {{- if not (in $file "site/") -}}
+    {{- $match = findRE $regex (readFile (printf "node_modules/bootstrap/%s" $file)) -}}
+  {{- else }}
+    {{- $match = findRE $regex (readFile $file) -}}
+  {{- end -}}
+ ```
+
+You may need to update this logic as we are overwriting the Bootstrap logic, which may change in future versions. Essentially, you want Hugo to be able to find the file, so change the logic as you run into errors to ensure that all files are found.
+

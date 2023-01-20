@@ -11,12 +11,13 @@
 
   h1 {
     @include font-size(4rem);
+    line-height: 1;
   }
 
   .lead {
     @include font-size(1rem);
     font-weight: 400;
-    color: var(--bs-secondary-color);
+    color: $gray-700;
   }
 
   .bd-code-snippet {
@@ -45,7 +46,8 @@
   }
 
   #carbonads { // stylelint-disable-line selector-max-id
-    margin-inline: auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include media-breakpoint-up(md) {
@@ -71,6 +73,10 @@
   }
 }
 
+.bd-btn-lg {
+  padding: .8rem 2rem;
+}
+
 .masthead-followup-icon {
   padding: 1rem;
   color: rgba(var(--bg-rgb), 1);
@@ -80,29 +86,11 @@
   mix-blend-mode: darken;
 
   svg {
-    filter: drop-shadow(0 1px 1px var(--bs-body-bg));
+    filter: drop-shadow(0 1px 1px #fff);
   }
 }
 
 .masthead-notice {
   background-color: var(--bd-accent);
   box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), .15), 0 .25rem 1.5rem rgba(var(--bs-body-bg-rgb), .75);
-}
-
-.animate-img {
-  > img {
-    transition: .2s ease-in-out transform; // stylelint-disable-line property-disallowed-list
-  }
-
-  &:hover > img {
-    transform: scale(1.1);
-  }
-}
-
-@if $enable-dark-mode {
-  [data-bs-theme="dark"] {
-    .masthead-followup-icon {
-      mix-blend-mode: lighten;
-    }
-  }
 }

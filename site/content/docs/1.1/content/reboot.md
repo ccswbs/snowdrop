@@ -3,7 +3,7 @@ layout: docs
 title: Reboot
 description: Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon.
 group: content
-aliases: "/docs/5.3/content/"
+aliases: "/docs/5.2/content/"
 toc: true
 ---
 
@@ -80,9 +80,9 @@ Note that because the font stack includes emoji fonts, many common symbol/dingba
 
 This `font-family` is applied to the `<body>` and automatically inherited globally throughout Bootstrap. To switch the global `font-family`, update `$font-family-base` and recompile Bootstrap.
 
-## Headings
+## Headings and paragraphs
 
-All heading elements—`<h1>`—`<h6>` have their `margin-top` removed, `margin-bottom: .5rem` set, and `line-height` tightened. While headings inherit their `color` by default, you can also override it via optional CSS variable, `--bs-heading-color`.
+All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-top` removed. Headings have `margin-bottom: .5rem` added and paragraphs `margin-bottom: 1rem` for easy spacing.
 
 {{< bs-table "table" >}}
 | Heading | Example |
@@ -94,35 +94,6 @@ All heading elements—`<h1>`—`<h6>` have their `margin-top` removed, `margin-
 | `<h5></h5>` | <span class="h5">h5. Bootstrap heading</span> |
 | `<h6></h6>` | <span class="h6">h6. Bootstrap heading</span> |
 {{< /bs-table >}}
-
-## Paragraphs
-
-All `<p>` elements have their `margin-top` removed and `margin-bottom: 1rem` set for easy spacing.
-
-{{< example >}}
-<p>This is an example paragraph.</p>
-{{< /example >}}
-
-## Links
-
-Links have a default `color` and underline applied. While links change on `:hover`, they don't change based on whether someone `:visited` the link. They also receive no special `:focus` styles.
-
-{{< example >}}
-<a href="#">This is an example link</a>
-{{< /example >}}
-
-As of v5.3.x, link `color` is set using `rgba()` and new `-rgb` CSS variables, allowing for easy customization of link color opacity. Change the link color opacity with the `--bs-link-opacity` CSS variable:
-
-{{< example >}}
-<a href="#" style="--bs-link-opacity: .5">This is an example link</a>
-{{< /example >}}
-
-
-Placeholder links—those without an `href`—are targeted with a more specific selector and have their `color` and `text-decoration` reset to their default values.
-
-{{< example >}}
-<a>This is a placeholder link</a>
-{{< /example >}}
 
 ## Horizontal rules
 
@@ -205,7 +176,7 @@ Use the `<kbd>` to indicate input that is typically entered via keyboard.
 
 {{< example >}}
 To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 {{< /example >}}
 
 ## Sample output
@@ -268,10 +239,6 @@ Various form elements have been rebooted for simpler base styles. Here are some 
 - `<button>`s and `<input>` button elements have `cursor: pointer` when `:not(:disabled)`.
 
 These changes, and more, are demonstrated below.
-
-{{< callout warning >}}
-{{< partial "callouts/warning-input-support.md" >}}
-{{< /callout >}}
 
 <form class="bd-example">
   <fieldset>
@@ -395,6 +362,10 @@ These changes, and more, are demonstrated below.
   </fieldset>
 </form>
 
+{{< callout warning >}}
+{{< partial "callout-warning-input-support.md" >}}
+{{< /callout >}}
+
 ### Pointers on buttons
 
 Reboot includes an enhancement for `role="button"` to change the default cursor to `pointer`. Add this attribute to elements to help indicate elements are interactive. This role isn't necessary for `<button>` elements, which get their own `cursor` change.
@@ -411,8 +382,8 @@ The `<address>` element is updated to reset the browser default `font-style` fro
 
 <div class="bd-example">
   <address>
-    <strong>ACME Corporation</strong><br>
-    1123 Fictional St,<br>
+    <strong>Twitter, Inc.</strong><br>
+    1355 Market St, Suite 900<br>
     San Francisco, CA 94103<br>
     <abbr title="Phone">P:</abbr> (123) 456-7890
   </address>
@@ -466,8 +437,10 @@ HTML5 adds [a new global attribute named `[hidden]`](https://developer.mozilla.o
 <input type="text" hidden>
 ```
 
-{{< callout info >}}
-Since `[hidden]` is not compatible with jQuery's `$(...).hide()` and `$(...).show()` methods, we don't specifically endorse `[hidden]` over other techniques for managing the `display` of elements.
+{{< callout warning >}}
+##### jQuery incompatibility
+
+`[hidden]` is not compatible with jQuery's `$(...).hide()` and `$(...).show()` methods. Therefore, we don't currently especially endorse `[hidden]` over other techniques for managing the `display` of elements.
 {{< /callout >}}
 
 To merely toggle the visibility of an element, meaning its `display` is not modified and the element can still affect the flow of the document, use [the `.invisible` class]({{< docsref "/utilities/visibility" >}}) instead.

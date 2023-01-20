@@ -4,7 +4,7 @@ title: Get started with Bootstrap
 description: Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
 group: getting-started
 aliases:
-  - "/docs/5.3/getting-started/"
+  - "/docs/5.2/getting-started/"
   - "/docs/getting-started/"
   - "/getting-started/"
 toc: true
@@ -87,7 +87,7 @@ You can also use the CDN to fetch any of our [additional builds listed in the Co
 Curious which components explicitly require our JavaScript and Popper? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
 
 <details>
-<summary class="bd-summary-link mb-3">Show components requiring JavaScript</summary>
+<summary class="text-primary mb-3">Show components requiring JavaScript</summary>
 {{< markdown >}}
 - Alerts for dismissing
 - Buttons for toggling states and checkbox/radio functionality

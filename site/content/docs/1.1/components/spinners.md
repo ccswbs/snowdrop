@@ -13,7 +13,7 @@ Bootstrap "spinners" can be used to show the loading state in your projects. The
 For accessibility purposes, each loader here includes `role="status"` and a nested `<span class="visually-hidden">Loading...</span>`.
 
 {{< callout info >}}
-{{< partial "callouts/info-prefersreducedmotion.md" >}}
+{{< partial "callout-info-prefersreducedmotion.md" >}}
 {{< /callout >}}
 
 ## Border spinner
@@ -205,7 +205,9 @@ Used for creating the CSS animations for our spinners. Included in `scss/_spinne
 
 
 [color]:   {{< docsref "/utilities/colors" >}}
+[display]: {{< docsref "/utilities/display" >}}
 [flex]:    {{< docsref "/utilities/flex" >}}
 [float]:   {{< docsref "/utilities/float" >}}
 [margin]:  {{< docsref "/utilities/spacing" >}}
+[sizing]:  {{< docsref "/utilities/sizing" >}}
 [text]:    {{< docsref "/utilities/text" >}}
