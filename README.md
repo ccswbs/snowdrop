@@ -67,6 +67,7 @@ To reference a specific Github branch, you can use the following syntax in your 
  1. Download the newer version of Bootstrap
  1. Copy the site folder from your download into this repository and name it "site"
  1. Update your version number for Snowdrop in package.json and config.yml
+ 1. Under .github/workflows/gh-pages.yml, change the DOCS_VERSION environment variable to your new version of Snowdrop
  1. Under site/static/docs, rename the interior folder to match the new Snowdrop folder
  1. Under site/content/docs, rename the interior folder to match the new Snowdrop folder
  1. Do a search for "{{< scss-docs" throughout the site folder. You results will likely include lines like "{{< scss-docs name="something" file="scss/_something.scss" >}}". Take note of the file parameter.
