@@ -43,6 +43,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          destination_dir: ./${{ .Site.Params.docs_version }}
+          
 
 
           
