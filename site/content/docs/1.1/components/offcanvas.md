@@ -34,7 +34,7 @@ Below is an offcanvas example that is shown by default (via `.show` on `.offcanv
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+    Content for the offcanvas goes here. You can place just about any Snowdrop component or custom elements here.
   </div>
 </div>
 {{< /example >}}
@@ -249,7 +249,7 @@ Since the offcanvas panel is conceptually a modal dialog, be sure to add `aria-l
 
 {{< added-in "5.2.0" >}}
 
-As part of Bootstrap's evolving CSS variables approach, offcanvas now uses local CSS variables on `.offcanvas` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+As part of Snowdrop's evolving CSS variables approach, offcanvas now uses local CSS variables on `.offcanvas` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
 
 {{< scss-docs name="offcanvas-css-vars" file="scss/_offcanvas.scss" >}}
 
@@ -333,7 +333,7 @@ const bsOffcanvas = new bootstrap.Offcanvas('#myOffcanvas')
 
 ### Events
 
-Bootstrap's offcanvas class exposes a few events for hooking into offcanvas functionality.
+Snowdrop's offcanvas class exposes a few events for hooking into offcanvas functionality.
 
 {{< bs-table "table" >}}
 | Event type | Description |

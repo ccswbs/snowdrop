@@ -1,16 +1,16 @@
 ---
 layout: docs
 title: Tables
-description: Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.
+description: Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Snowdrop.
 group: content
 toc: true
 ---
 
 ## Overview
 
-Due to the widespread use of `<table>` elements across third-party widgets like calendars and date pickers, Bootstrap's tables are **opt-in**. Add the base class `.table` to any `<table>`, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.
+Due to the widespread use of `<table>` elements across third-party widgets like calendars and date pickers, Snowdrop's tables are **opt-in**. Add the base class `.table` to any `<table>`, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Snowdrop, meaning any nested tables can be styled independent from the parent.
 
-Using the most basic table markup, here's how `.table`-based tables look in Bootstrap.
+Using the most basic table markup, here's how `.table`-based tables look in Snowdrop.
 
 {{< table class="table" simplified="false" >}}
 

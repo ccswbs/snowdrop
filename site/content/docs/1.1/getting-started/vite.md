@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Bootstrap & Vite"
-description: The official guide for how to include and bundle Bootstrap's CSS and JavaScript in your project using Vite.
+title: "Snowdrop & Vite"
+description: The official guide for how to include and bundle Snowdrop's CSS and JavaScript in your project using Vite.
 group: getting-started
 toc: true
 thumbnail: guides/bootstrap-vite@2x.png
@@ -15,7 +15,7 @@ thumbnail: guides/bootstrap-vite@2x.png
 
 ## Setup
 
-We're building a Vite project with Bootstrap from scratch, so there are some prerequisites and up front steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
+We're building a Vite project with Snowdrop from scratch, so there are some prerequisites and up front steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
 
 1. **Create a project folder and setup npm.** We'll create the `my-project` folder and initialize npm with the `-y` argument to avoid it asking us all the interactive questions.
 
@@ -30,18 +30,18 @@ We're building a Vite project with Bootstrap from scratch, so there are some pre
    npm i --save-dev vite
    ```
 
-3. **Install Bootstrap.** Now we can install Bootstrap. We'll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don't plan on using those components, you can omit Popper here.
+3. **Install Snowdrop.** Now we can install Snowdrop. We'll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don't plan on using those components, you can omit Popper here.
 
    ```sh
    npm i --save bootstrap @popperjs/core
    ```
-4. **Install additional dependency.** In addition to Vite and Bootstrap, we need another dependency (Sass) to properly import and bundle Bootstrap's CSS.
+4. **Install additional dependency.** In addition to Vite and Snowdrop, we need another dependency (Sass) to properly import and bundle Snowdrop's CSS.
 
    ```sh
    npm i --save-dev sass
    ```
 
-Now that we have all the necessary dependencies installed and setup, we can get to work creating the project files and importing Bootstrap.
+Now that we have all the necessary dependencies installed and setup, we can get to work creating the project files and importing Snowdrop.
 
 ## Project structure
 
@@ -96,11 +96,11 @@ With dependencies installed and our project folder ready for us to start coding,
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap w/ Vite</title>
+       <title>Snowdrop w/ Vite</title>
      </head>
      <body>
        <div class="container py-4 px-3 mx-auto">
-         <h1>Hello, Bootstrap and Vite!</h1>
+         <h1>Hello, Snowdrop and Vite!</h1>
          <button class="btn btn-primary">Primary button</button>
        </div>
        <script type="module" src="./js/main.js"></script>
@@ -108,7 +108,7 @@ With dependencies installed and our project folder ready for us to start coding,
    </html>
    ```
 
-   We're including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap's CSS is loaded by Vite.
+   We're including a little bit of Snowdrop styling here with the `div class="container"` and `<button>` so that we see when Snowdrop's CSS is loaded by Vite.
 
 3. **Now we need an npm script to run Vite.** Open `package.json` and add the `start` script shown below (you should already have the test script). We'll use this script to start our local Vite dev server.
 
@@ -131,11 +131,11 @@ With dependencies installed and our project folder ready for us to start coding,
 
    <img class="img-fluid" src="/docs/{{< param docs_version >}}/assets/img/guides/vite-dev-server.png" alt="Vite dev server running">
 
-In the next and final section to this guide, we’ll import all of Bootstrap’s CSS and JavaScript.
+In the next and final section to this guide, we’ll import all of Snowdrop’s CSS and JavaScript.
 
-## Import Bootstrap
+## Import Snowdrop
 
-1. **Set up Bootstrap's Sass import in `vite.config.js`.** Your configuration file is now complete and should match the snippet below. The only new part here is the `resolve` section—we use this to add an alias to our source files inside `node_modules` to keep imports as simple as possible.
+1. **Set up Snowdrop's Sass import in `vite.config.js`.** Your configuration file is now complete and should match the snippet below. The only new part here is the `resolve` section—we use this to add an alias to our source files inside `node_modules` to keep imports as simple as possible.
 
    <!-- eslint-skip -->
    ```js
@@ -155,23 +155,23 @@ In the next and final section to this guide, we’ll import all of Bootstrap’s
    }
    ```
 
-2. **Now, let's import Bootstrap's CSS.** Add the following to `src/scss/styles.scss` to import all of Bootstrap's source Sass.
+2. **Now, let's import Snowdrop's CSS.** Add the following to `src/scss/styles.scss` to import all of Snowdrop's source Sass.
 
    ```scss
-   // Import all of Bootstrap's CSS
+   // Import all of Snowdrop's CSS
    @import "~bootstrap/scss/bootstrap";
    ```
 
    *You can also import our stylesheets individually if you want. [Read our Sass import docs]({{< docsref "/customize/sass#importing" >}}) for details.*
 
-3. **Next we load the CSS and import Bootstrap's JavaScript.** Add the following to `src/js/main.js` to load the CSS and import all of Bootstrap's JS. Popper will be imported automatically through Bootstrap.
+3. **Next we load the CSS and import Snowdrop's JavaScript.** Add the following to `src/js/main.js` to load the CSS and import all of Snowdrop's JS. Popper will be imported automatically through Snowdrop.
 
    <!-- eslint-skip -->
    ```js
    // Import our custom CSS
    import '../scss/styles.scss'
 
-   // Import all of Bootstrap's JS
+   // Import all of Snowdrop's JS
    import * as bootstrap from 'bootstrap'
    ```
 
@@ -185,13 +185,13 @@ In the next and final section to this guide, we’ll import all of Bootstrap’s
    import { Tooltip, Toast, Popover } from 'bootstrap';
    ```
 
-   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}}) for more information on how to use Bootstrap's plugins.*
+   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}}) for more information on how to use Snowdrop's plugins.*
 
-4. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your local development server should now look like this.
+4. **And you're done! 🎉** With Snowdrop's source Sass and JS fully loaded, your local development server should now look like this.
 
-   <img class="img-fluid" src="/docs/{{< param docs_version >}}/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite dev server running with Bootstrap">
+   <img class="img-fluid" src="/docs/{{< param docs_version >}}/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite dev server running with Snowdrop">
 
-   Now you can start adding any Bootstrap components you want to use. Be sure to [check out the complete Vite example project](https://github.com/twbs/examples/tree/main/vite) for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap's CSS and JS that you need.
+   Now you can start adding any Snowdrop components you want to use. Be sure to [check out the complete Vite example project](https://github.com/twbs/examples/tree/main/vite) for how to include additional custom Sass and optimize your build by importing only the parts of Snowdrop's CSS and JS that you need.
 
 {{< markdown >}}
 {{< partial "guide-footer.md" >}}

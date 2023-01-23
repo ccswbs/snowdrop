@@ -4,7 +4,7 @@ title: Forms
 description: Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
 group: forms
 toc: true
-aliases: "/docs/5.2/forms/"
+aliases: "/docs/1.1/forms/"
 sections:
   - title: Form control
     description: Style textual inputs and textareas with support for multiple states.
@@ -26,11 +26,11 @@ sections:
 
 ## Overview
 
-Bootstrap's form controls expand on [our Rebooted form styles]({{< docsref "/content/reboot#forms" >}}) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Snowdrop's form controls expand on [our Rebooted form styles]({{< docsref "/content/reboot#forms" >}}) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
 
 Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for email address or `number` for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
 
-Here's a quick example to demonstrate Bootstrap's form styles. Keep reading for documentation on required classes, form layout, and more.
+Here's a quick example to demonstrate Snowdrop's form styles. Keep reading for documentation on required classes, form layout, and more.
 
 {{< example >}}
 <form>

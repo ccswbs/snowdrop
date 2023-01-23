@@ -68,7 +68,7 @@ Or modify the default `border-color` of a component:
 
 {{< added-in "5.2.0" >}}
 
-Bootstrap `border-{color}` utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.
+Snowdrop `border-{color}` utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.
 
 ### How it works
 

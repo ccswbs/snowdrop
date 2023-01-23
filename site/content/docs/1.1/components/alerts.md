@@ -85,7 +85,7 @@ Alerts can also contain additional HTML elements like headings, paragraphs and d
 
 ### Icons
 
-Similarly, you can use [flexbox utilities]({{< docsref "/utilities/flex" >}}) and [Bootstrap Icons]({{< param icons >}}) to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.
+Similarly, you can use [flexbox utilities]({{< docsref "/utilities/flex" >}}) and [Snowdrop Icons]({{< param icons >}}) to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.
 
 {{< example >}}
 <div class="alert alert-primary d-flex align-items-center" role="alert">
@@ -98,7 +98,7 @@ Similarly, you can use [flexbox utilities]({{< docsref "/utilities/flex" >}}) an
 </div>
 {{< /example >}}
 
-Need more than one icon for your alerts? Consider using more Bootstrap Icons and making a local SVG sprite like so to easily reference the same icons repeatedly.
+Need more than one icon for your alerts? Consider using more Snowdrop Icons and making a local SVG sprite like so to easily reference the same icons repeatedly.
 
 {{< example >}}
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -143,7 +143,7 @@ Need more than one icon for your alerts? Consider using more Bootstrap Icons and
 
 Using the alert JavaScript plugin, it's possible to dismiss any alert inline. Here's how:
 
-- Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.
+- Be sure you've loaded the alert plugin, or the compiled Snowdrop JavaScript.
 - Add a [close button]({{< docsref "/components/close-button" >}}) and the `.alert-dismissible` class, which adds extra padding to the right of the alert and positions the close button.
 - On the close button, add the `data-bs-dismiss="alert"` attribute, which triggers the JavaScript functionality. Be sure to use the `<button>` element with it for proper behavior across all devices.
 - To animate alerts when dismissing them, be sure to add the `.fade` and `.show` classes.
@@ -167,7 +167,7 @@ When an alert is dismissed, the element is completely removed from the page stru
 
 {{< added-in "5.2.0" >}}
 
-As part of Bootstrap's evolving CSS variables approach, alerts now use local CSS variables on `.alert` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+As part of Snowdrop's evolving CSS variables approach, alerts now use local CSS variables on `.alert` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
 
 {{< scss-docs name="alert-css-vars" file="scss/_alert.scss" >}}
 
@@ -238,7 +238,7 @@ alert.close()
 
 ### Events
 
-Bootstrap's alert plugin exposes a few events for hooking into alert functionality.
+Snowdrop's alert plugin exposes a few events for hooking into alert functionality.
 
 {{< bs-table >}}
 | Event | Description |

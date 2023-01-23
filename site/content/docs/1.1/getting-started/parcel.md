@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Bootstrap & Parcel"
-description: The official guide for how to include and bundle Bootstrap's CSS and JavaScript in your project using Parcel.
+title: "Snowdrop & Parcel"
+description: The official guide for how to include and bundle Snowdrop's CSS and JavaScript in your project using Parcel.
 group: getting-started
 toc: true
 thumbnail: guides/bootstrap-parcel@2x.png
@@ -15,7 +15,7 @@ thumbnail: guides/bootstrap-parcel@2x.png
 
 ## Setup
 
-We're building a Parcel project with Bootstrap from scratch, so there are some prerequisites and up front steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
+We're building a Parcel project with Snowdrop from scratch, so there are some prerequisites and up front steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
 
 1. **Create a project folder and setup npm.** We'll create the `my-project` folder and initialize npm with the `-y` argument to avoid it asking us all the interactive questions.
 
@@ -30,13 +30,13 @@ We're building a Parcel project with Bootstrap from scratch, so there are some p
    npm i --save-dev parcel
    ```
 
-3. **Install Bootstrap.** Now we can install Bootstrap. We'll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don't plan on using those components, you can omit Popper here.
+3. **Install Snowdrop.** Now we can install Snowdrop. We'll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don't plan on using those components, you can omit Popper here.
 
    ```sh
    npm i --save bootstrap @popperjs/core
    ```
 
-Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Bootstrap.
+Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Snowdrop.
 
 ## Project structure
 
@@ -75,20 +75,20 @@ With dependencies installed and our project folder ready for us to start coding,
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap w/ Parcel</title>
+       <title>Snowdrop w/ Parcel</title>
        <link rel="stylesheet" href="scss/styles.scss">
        <script type="module" src="js/main.js"></script>
      </head>
      <body>
        <div class="container py-4 px-3 mx-auto">
-         <h1>Hello, Bootstrap and Parcel!</h1>
+         <h1>Hello, Snowdrop and Parcel!</h1>
          <button class="btn btn-primary">Primary button</button>
        </div>
      </body>
    </html>
    ```
 
-   We're including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap's CSS is loaded by Webpack.
+   We're including a little bit of Snowdrop styling here with the `div class="container"` and `<button>` so that we see when Snowdrop's CSS is loaded by Webpack.
 
    Parcel will automatically detect we're using Sass and install the [Sass Parcel plugin](https://parceljs.org/languages/sass/) to support it. However, if you wish, you can also manually run `npm i --save-dev @parcel/transformer-sass`.
 
@@ -113,26 +113,26 @@ With dependencies installed and our project folder ready for us to start coding,
 
    <img class="img-fluid" src="/docs/{{< param docs_version >}}/assets/img/guides/parcel-dev-server.png" alt="Parcel dev server running">
 
-In the next and final section to this guide, we'll import all of Bootstrap's CSS and JavaScript.
+In the next and final section to this guide, we'll import all of Snowdrop's CSS and JavaScript.
 
-## Import Bootstrap
+## Import Snowdrop
 
-Importing Bootstrap into Parcel requires two imports, one into our `styles.scss` and one into our `main.js`.
+Importing Snowdrop into Parcel requires two imports, one into our `styles.scss` and one into our `main.js`.
 
-1. **Import Bootstrap's CSS.** Add the following to `src/scss/styles.scss` to import all of Bootstrap's source Sass.
+1. **Import Snowdrop's CSS.** Add the following to `src/scss/styles.scss` to import all of Snowdrop's source Sass.
 
    ```scss
-   // Import all of Bootstrap's CSS
+   // Import all of Snowdrop's CSS
    @import "~bootstrap/scss/bootstrap";
    ```
 
    *You can also import our stylesheets individually if you want. [Read our Sass import docs]({{< docsref "/customize/sass#importing" >}}) for details.*
 
-2. **Import Bootstrap's JS.** Add the following to `src/js/main.js` to import all of Bootstrap's JS. Popper will be imported automatically through Bootstrap.
+2. **Import Snowdrop's JS.** Add the following to `src/js/main.js` to import all of Snowdrop's JS. Popper will be imported automatically through Snowdrop.
 
    <!-- eslint-skip -->
    ```js
-   // Import all of Bootstrap's JS
+   // Import all of Snowdrop's JS
    import * as bootstrap from 'bootstrap'
    ```
 
@@ -146,13 +146,13 @@ Importing Bootstrap into Parcel requires two imports, one into our `styles.scss`
    import { Tooltip, Toast, Popover } from 'bootstrap'
    ```
 
-   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}}) for more information on how to use Bootstrap's plugins.*
+   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}}) for more information on how to use Snowdrop's plugins.*
 
-3. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your local development server should now look like this.
+3. **And you're done! 🎉** With Snowdrop's source Sass and JS fully loaded, your local development server should now look like this.
 
-   <img class="img-fluid" src="/docs/{{< param docs_version >}}/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel dev server running with Bootstrap">
+   <img class="img-fluid" src="/docs/{{< param docs_version >}}/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel dev server running with Snowdrop">
 
-   Now you can start adding any Bootstrap components you want to use. Be sure to [check out the complete Parcel example project](https://github.com/twbs/examples/tree/main/parcel) for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap's CSS and JS that you need.
+   Now you can start adding any Snowdrop components you want to use. Be sure to [check out the complete Parcel example project](https://github.com/twbs/examples/tree/main/parcel) for how to include additional custom Sass and optimize your build by importing only the parts of Snowdrop's CSS and JS that you need.
 
 {{< markdown >}}
 {{< partial "guide-footer.md" >}}
