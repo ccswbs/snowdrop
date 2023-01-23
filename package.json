@@ -38,6 +38,8 @@
   "author": "M. Brent Harp <brharp@uoguelph.ca>",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.0.0"
   },
   "devDependencies": {
     "@popperjs/core": "^2.11.6",
