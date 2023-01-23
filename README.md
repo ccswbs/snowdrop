@@ -63,9 +63,9 @@ To reference a specific Github branch, you can use the following syntax in your 
  # Upgrading Bootstrap version
 
  1. Update the version of Bootstrap in package.json
- 1. Rename the site folder as site_old
+ 1. Rename the "site" folder as its version number and place in the "versions" folder
  1. Download the newer version of Bootstrap
- 1. Copy the site folder into this repository
+ 1. Copy the site folder from your download into this repository and name it "site"
  1. Update your version number for Snowdrop in package.json and config.yml
  1. Under site/static/docs, rename the interior folder to match the new Snowdrop folder
  1. Under site/content/docs, rename the interior folder to match the new Snowdrop folder
@@ -95,6 +95,7 @@ To reference a specific Github branch, you can use the following syntax in your 
 You may need to update this logic as we are overwriting the Bootstrap logic, which may change in future versions. Essentially, you want Hugo to be able to find the file, so change the logic as you run into errors to ensure that all files are found.
 
 1. In site/layouts/partials/stylesheet.html, change all instances of "dist/js/bootstrap" to "dist/js/snowdrop"
+1. In site/layouts/partials/scripts.html, change all instances of "dist/js/bootstrap" to "/dist/js/snowdrop"
 1. In site/assets/scss/_variables.scss and change the main colour variable, usually $bd-purple, that its value is $red (or whatever colour you want it to be)
 1. Run npm run docs-serve.
 1. Make any updates you feel are necessary to get the page looking the way you want it (e.g., you can update the homepage background class .bd-masthead in site/assets/scss/_masthead.scss)
@@ -108,3 +109,5 @@ You may need to update this logic as we are overwriting the Bootstrap logic, whi
 1. Update the Bootstrap heading so it reads Snowdrop in site/layouts/partials/home/masthead.html. Change the documentation on this page to reflect the details of Snowdrop (e.g., you can point to our npm package and explain how to use it for anyone using the front-end toolkit)
 1. Comment out the script in site/layouts/partials/ads.html
 1. Comment out the script in site/layouts/partials/analytics.html
+1. Download a copy of the compiled code for the previous version of Snowdrop (usually available on the gh-pages branch)
+1. Under _site/docs, ensure that there's a folder there with the previous version of Snowdrop and a fully compiled version of the site under that folder.
