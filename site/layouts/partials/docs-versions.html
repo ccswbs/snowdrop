@@ -20,7 +20,18 @@
         Latest ({{ .Site.Params.docs_version }}.x)
       </a>
     </li>
+    <li><h6 class="dropdown-header">v1 Snowdrop releases</h6></li>
+    <li>
+      {{- if (eq .Page.Params.added "1.1") }}
+        <div class="dropdown-item disabled">v1.0</div>
+      {{- else }}
+        <a class="dropdown-item" href="https://ccswbs.github.io/snowdrop/1.0/">v1.0</a>
+      {{- end }}
+    </li>
     <li><h6 class="dropdown-header">v5 Bootstrap releases</h6></li>
+    <li>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/{{ $versions_link }}">v5.2.3</a>
+    </li>
     <li>
       {{- if (eq .Page.Params.added "5.2") }}
         <div class="dropdown-item disabled">v5.1.3</div>
