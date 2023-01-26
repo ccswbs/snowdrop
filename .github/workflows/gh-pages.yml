@@ -7,7 +7,7 @@ on:
     pull_request:
 
 env:
-  DOCS_VERSION: "1.0"
+  DOCS_VERSION: "1.1"
 
 jobs:
   deploy:

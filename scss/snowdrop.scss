@@ -64,9 +64,8 @@ $enable-negative-margins: true;
 
 // Bring in Bootstrap
 
-@import "bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 // Import extensions
 @import "variables";
 @import "quicklinks";
-
