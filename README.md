@@ -62,6 +62,7 @@ To reference a specific Github branch, you can use the following syntax in your 
 
  # Upgrading Bootstrap version
 
+ 1. Create a new feature branch.
  1. Update the version of Bootstrap in package.json
  1. Run npm install and commit the change
 
@@ -72,7 +73,9 @@ To reference a specific Github branch, you can use the following syntax in your 
 
  ## Rename version number
  1. Upgrade the Snowdrop version number in package.json. Use the {BOOTSTRAP_VERSION_NUM} as a guide as well as [Semantic Versioning](https://semver.org). For the rest of this readme, we'll refer to the updated Snowdrop version number as {SNOWDROP_VERSION_NUM}.
- 1. In config.yml, upgrade any instances of the old Snowdrop version to {SNOWDROP_VERSION_NUM}. You can ignore the CDN section if we're not using a CDN to host Snowdrop.
+ 1. In config.yml:
+   - upgrade any instances of the old Snowdrop version to {SNOWDROP_VERSION_NUM}.
+   - ignore the CDN section for now.
  1. In .github/workflows/gh-pages.yml, change the DOCS_VERSION environment variable to "{SNOWDROP_VERSION_NUM}"
 
  ## Update the Bootstrap docs so they are customised for Snowdrop
@@ -127,3 +130,15 @@ This section involves updating the scss-docs shortcode logic so that it can alwa
 ## (Optional) Hide ads and analytics
 1. Comment out the script in site/layouts/partials/ads.html
 1. Comment out the script in site/layouts/partials/analytics.html
+
+## Test the docs on Github
+1. In .github/workflows/gh-pages.yml, update the workflow so:
+  - it triggers for your feature branch instead of main. 
+  - it deploys for your feature branch instead of main.
+1. When you push your branch to github, it should deploy a new version of the documentation under a folder called {SNOWDROP_VERSION_NUM}.
+1. Go to https://ccswbs.github.io/snowdrop/{SNOWDROP_VERSION_NUM}/
+1. If all looks as expected, revert the change so that workflow triggers and deploys on main.
+
+## Update CDN hash values for styles and js stored on https://ccswbs.github.io
+1. If you deployed the docs on https://ccswbs.github.io/snowdrop/{SNOWDROP_VERSION_NUM}/ and the styles are broken, it's possible you need to update the hash values for the styles. Under config.yml, find the css, js and js_bundle values and generate new hashes for each URL hosted on https://ccswbs.github.io/snowdrop/{SNOWDROP_VERSION_NUM}/.
+1. Re-deploy to Github and see if that fixes the styles
