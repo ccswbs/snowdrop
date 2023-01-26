@@ -21,6 +21,10 @@ $info:    #006eb7;
 $yiq-contrasted-threshold: 122;
 
 
+// -------------------------------
+// Layout
+// -------------------------------
+
 // Grid variables 
 $grid-breakpoints: (
   xs: 0,
@@ -39,36 +43,33 @@ $container-max-widths: (
   xxl: 1400px
 );
 
-// A background that transitions from black to yellow to red to blue.
 
-.bg-variegated {
-  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
-}
-
-
+// -------------------------------
 // Typography
+// -------------------------------
+
+// Fonts
+$font-family-sans-serif: Roboto, Arial, sans-serif;
+
+// Headings
 $headings-color: #212529;
 $headings-font-weight: 600;
+
 $hr-border-color: $yellow;
 $hr-border-width: 4px;
 
-
 // Links
-
 $link-color: #006eb7;
 
-
-// Fonts
-
-$font-family-sans-serif: Roboto, Arial, sans-serif;
-
-
+// -------------------------------
 // Options
+// -------------------------------
 
 $enable-rounded:  false;
 
-
-// Buttons and forms
+// -------------------------------
+// Forms and Buttons
+// -------------------------------
 
 $input-btn-padding-y: .5625rem;
 $input-btn-padding-x: 1.5rem;
@@ -76,9 +77,25 @@ $input-btn-padding-x: 1.5rem;
 $input-btn-padding-y-lg: .75rem;
 $input-btn-padding-x-lg: 4rem;
 
+// -------------------------------
 // Margins
+// -------------------------------
 
 $enable-negative-margins: true;
+
+// -------------------------------
+// Custom Styles
+// -------------------------------
+
+
+// A background that transitions from black to yellow to red to blue.
+.bg-variegated {
+  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
+}
+
+// -------------------------------
+// Imports
+// -------------------------------
 
 // Bring in Bootstrap
 
