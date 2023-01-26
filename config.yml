@@ -88,8 +88,8 @@ params:
     css_rtl_hash:     "sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
     js:               "https://ccswbs.github.io/snowdrop/1.1/docs/1.1/dist/js/snowdrop.min.js"
     js_hash:          "sha384-4lGV3bx3BCECLAh6k3Srdx/ItkFrgm2ufVZmX4F1RBRM7EIfkcelHqS9ExKrF5lD"
-    js_bundle:        "https://ccswbs.github.io/snowdrop/docs/1.0/dist/js/snowdrop.bundle.min.js"
-    js_bundle_hash:   "sha384-9xKGb7+DHKmRXmqLfr7u1pZV3RexpzqNm+PiwQySRNf95feFjKKspFZlTtPIhCyF"
+    js_bundle:        "https://ccswbs.github.io/snowdrop/1.1/docs/1.1/dist/js/snowdrop.bundle.min.js"
+    js_bundle_hash:   "sha384-M5WxJd4OqISS9FyCIzoKmeyLTS4N4p1iV/BuDaRF8LnuWOUslA8z+XyG5micDLr9"
     popper:           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     popper_hash:      "sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
 
