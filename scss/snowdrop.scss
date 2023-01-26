@@ -1,12 +1,4 @@
 
-// Snowdrop.scss
-
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions"; 
-
-// --------------------------------------------------------------------------
-// 2. Include any default variable overrides here
-// --------------------------------------------------------------------------
 
 // Color system
 
@@ -28,40 +20,38 @@ $info:    #006eb7;
 
 $yiq-contrasted-threshold: 122;
 
-// Grid variables 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1400px
-);
+// A background that transitions from black to yellow to red to blue.
+
+.bg-variegated {
+  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
+}
+
 
 // Typography
-$headings-color: #212529;
+
 $headings-font-weight: 600;
 $hr-border-color: $yellow;
 $hr-border-width: 4px;
 
+
 // Links
-$link-color: #006eb7;
+
+$link-color:                              #006eb7;
+
 
 // Fonts
+
 $font-family-sans-serif: Roboto, Arial, sans-serif;
 
+
 // Options
-$enable-rounded: false;
+
+$enable-rounded:  false;
+
 
 // Buttons and forms
+
 $input-btn-padding-y: .5625rem;
 $input-btn-padding-x: 1.5rem;
 
@@ -69,75 +59,13 @@ $input-btn-padding-y-lg: .75rem;
 $input-btn-padding-x-lg: 4rem;
 
 // Margins
+
 $enable-negative-margins: true;
 
-// --------------------------------------------------------------------------
-// 3. Include remainder of required Bootstrap stylesheets
-// @import "../node_modules/bootstrap/scss/variables";
-
-// 4. Include any default map overrides here
-
-// 5. Include remainder of required parts
-// @import "../node_modules/bootstrap/scss/maps";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/root";
-
-// 6. Optionally include any other parts as needed
-// @import "../node_modules/bootstrap/scss/utilities";
-// @import "../node_modules/bootstrap/scss/reboot";
-// @import "../node_modules/bootstrap/scss/type";
-// @import "../node_modules/bootstrap/scss/images";
-// @import "../node_modules/bootstrap/scss/containers";
-// @import "../node_modules/bootstrap/scss/grid";
-// @import "../node_modules/bootstrap/scss/helpers";
-
-// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-// @import "../node_modules/bootstrap/scss/utilities/api";
-
-
-// --------------------------------------------------------------------------
-// 8. Add additional custom code here
-// --------------------------------------------------------------------------
-
-// A background that transitions from black to yellow to red to blue.
-.bg-variegated {
-  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
-}
-
-
-// Grid system
-
-
-/*
-
-// Example usage
-
-<div class="container page-container">
-  <div class="site-content">
-    <div class="content-area">
-      <div class="row">
-        <div class="col">Content here</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-*/
-
-// Usage
-
-.site-content {
-  padding: 2rem;
-}
-
-.content-area {
-  padding-top: 3rem;
-}
+// Bring in Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Custom components
-
+// Import extensions
 @import "variables";
 @import "quicklinks";
-

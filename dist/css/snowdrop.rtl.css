@@ -3,29 +3,6 @@
   background: linear-gradient(-90deg, var(--bs-dark) 25%, var(--bs-yellow) 25%, var(--bs-yellow) 50%, var(--bs-red) 50%, var(--bs-red) 75%, var(--bs-blue) 75%);
 }
 
-/*
-
-// Example usage
-
-<div class="container page-container">
-  <div class="site-content">
-    <div class="content-area">
-      <div class="row">
-        <div class="col">Content here</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-*/
-.site-content {
-  padding: 2rem;
-}
-
-.content-area {
-  padding-top: 3rem;
-}
-
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -139,7 +116,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #212529;
 }
 
 h1, .h1 {
@@ -687,7 +663,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1400px;
+    max-width: 1320px;
   }
 }
 .row {
@@ -5425,7 +5401,7 @@ textarea.form-control-lg {
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
   --bs-popover-header-font-size: 1rem;
-  --bs-popover-header-color: #212529;
+  --bs-popover-header-color: ;
   --bs-popover-header-bg: #f0f0f0;
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 1rem;
