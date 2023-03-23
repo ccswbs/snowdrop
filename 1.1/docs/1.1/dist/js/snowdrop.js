@@ -1,6 +1,6 @@
 /*!
-  * Snowdrop v1.1.0 (undefined)
-  * Copyright 2023 M. Brent Harp <brharp@uoguelph.ca>
+  * Snowdrop v1.1.1 (undefined)
+  * Copyright 2023 CCS Web & Development Solutions, University of Guelph
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
