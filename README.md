@@ -70,6 +70,7 @@ To reference a specific Github branch, you can use the following syntax in your 
  1. Rename the "site" folder as "site_old"
  1. Download the newer version of Bootstrap. For the rest of this guide, we'll refer to this version as {BOOTSTRAP_VERSION_NUM}
  1. Copy the "site" folder from your Bootstrap download into the Snowdrop repository
+ 1. Review the package.json file in the Bootstrap download. If you need to update packages in the snowdrop package.json, do so. Note that we've added the parameter "-Inode_modules/bootstrap/scss" to the sass command in the css-compile script in order to import bootstrap without specifying the parent directory.
 
  ## Rename version number
  1. Upgrade the Snowdrop version number in package.json. Use the {BOOTSTRAP_VERSION_NUM} as a guide as well as [Semantic Versioning](https://semver.org). For the rest of this readme, we'll refer to the updated Snowdrop version number as {SNOWDROP_VERSION_NUM}.

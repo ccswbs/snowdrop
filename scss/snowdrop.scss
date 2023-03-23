@@ -9,48 +9,67 @@ $blue:    #69a3b9;   //   ""   blue
 $primary: $red;
 $info:    #006eb7;
 
-// Bootstrap's color contrast function (color-yiq) utilizes the YIQ 
-// color space to automatically return a light (#fff) or dark (#111) 
-// contrast color based on the specified base color. If the color
-// contrast of the background color exceeds a threshold then a dark
-// foreground color is used. The default threshold (150) returns a 
-// light foreground color for U of G blue which does not meet WCAG 
-// color contrast requirements so we decrease the threshold a bit
-// to get dark text on a blue background.
+// -------------------------------
+// Layout
+// -------------------------------
 
-$yiq-contrasted-threshold: 122;
+// Grid variables 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px
+);
 
 
-// A background that transitions from black to yellow to red to blue.
-
-.bg-variegated {
-  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
-}
-
-
+// -------------------------------
 // Typography
+// -------------------------------
 
-$headings-font-weight: 600;
+// Fonts
+$font-family-sans-serif:  Roboto, Arial, sans-serif;
+
+// Body
+$body-color:                  #555;
+
+// Headings
+$headings-color:              #222;
+$headings-font-weight:        600;
+
+// Font sizes
+$font-size-root:              18px;
+$h1-font-size:                4rem;
+$h2-font-size:                3.25rem;
+$h3-font-size:                2.75rem;
+$h4-font-size:                2.5rem;
+$h5-font-size:                2.25rem;
+$h6-font-size:                2rem;
+
 $hr-border-color: $yellow;
 $hr-border-width: 4px;
 
-
 // Links
+$link-color: #006eb7;
 
-$link-color:                              #006eb7;
-
-
-// Fonts
-
-$font-family-sans-serif: Roboto, Arial, sans-serif;
-
-
+// -------------------------------
 // Options
+// -------------------------------
 
 $enable-rounded:  false;
 
-
-// Buttons and forms
+// -------------------------------
+// Forms and Buttons
+// -------------------------------
 
 $input-btn-padding-y: .5625rem;
 $input-btn-padding-x: 1.5rem;
@@ -58,13 +77,28 @@ $input-btn-padding-x: 1.5rem;
 $input-btn-padding-y-lg: .75rem;
 $input-btn-padding-x-lg: 4rem;
 
+// -------------------------------
 // Margins
+// -------------------------------
 
 $enable-negative-margins: true;
 
+// -------------------------------
+// Custom Styles
+// -------------------------------
+
+// A background that transitions from black to yellow to red to blue.
+.bg-variegated {
+  background: linear-gradient(90deg,var(--bs-dark) 25%,var(--bs-yellow) 25%,var(--bs-yellow) 50%,var(--bs-red) 50%,var(--bs-red) 75%,var(--bs-blue) 75%);
+}
+
+// -------------------------------
+// Imports
+// -------------------------------
+
 // Bring in Bootstrap
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap";
 
 // Import extensions
 @import "variables";
